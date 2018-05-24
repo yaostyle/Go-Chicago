@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>
     <color name="actionBarPrimaryText">#a80000</color>
     <color name="itemTitleText">#000000</color>
+    <color name="reviewStar">#ffaa00</color>
 </resources>

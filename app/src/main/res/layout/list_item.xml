@@ -8,30 +8,30 @@
         android:id="@+id/image"
         android:layout_width="90dp"
         android:layout_height="90dp"
-        android:scaleType="centerCrop"
         android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_weight="1"
         android:padding="0dp"
-        android:layout_weight="1" />
+        android:scaleType="centerCrop" />
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="@dimen/list_height"
         android:layout_gravity="top"
+        android:layout_weight="4"
         android:orientation="vertical"
-        android:paddingLeft="10dp"
-        android:paddingTop="8dp"
         android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
         android:paddingRight="8dp"
-        android:layout_weight="3">
+        android:paddingTop="8dp">
 
         <TextView
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:gravity="left"
             android:layout_weight="1"
+            android:gravity="left"
             android:textColor="@color/itemTitleText"
-            android:textSize="18sp"/>
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/location"
@@ -40,12 +40,84 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="1" />
 
-        <TextView
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
-            android:layout_gravity="bottom"
-            android:text="Review ***** "/>
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/review_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Review: " />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_toRightOf="@id/review_text"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/review_star1"
+                    android:layout_width="@dimen/star_size"
+                    android:layout_height="@dimen/star_size"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_star_filled"
+
+                    android:tint="@color/reviewStar" />
+
+                <ImageView
+                    android:id="@+id/review_star2"
+                    android:layout_width="@dimen/star_size"
+                    android:layout_height="@dimen/star_size"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_star_filled"
+                    android:tint="@color/reviewStar" />
+
+                <ImageView
+                    android:id="@+id/review_star3"
+                    android:layout_width="@dimen/star_size"
+                    android:layout_height="@dimen/star_size"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_star_filled"
+                    android:tint="@color/reviewStar" />
+
+                <ImageView
+                    android:id="@+id/review_star4"
+                    android:layout_width="@dimen/star_size"
+                    android:layout_height="@dimen/star_size"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_star_filled"
+                    android:tint="@color/reviewStar" />
+
+                <ImageView
+                    android:id="@+id/review_star5"
+                    android:layout_width="@dimen/star_size"
+                    android:layout_height="@dimen/star_size"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_star_filled"
+                    android:tint="@color/reviewStar" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="2"
+                android:gravity="left">
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
     </LinearLayout>
 
     <ImageView
@@ -54,7 +126,7 @@
         android:layout_gravity="center_horizontal|center_vertical"
         android:layout_weight="1"
         android:scaleType="fitCenter"
-        android:tint="@color/colorPrimary"
-        android:src="@drawable/ic_view_next"/>
+        android:src="@drawable/ic_view_next"
+        android:tint="@color/colorPrimary" />
 
 </LinearLayout>
