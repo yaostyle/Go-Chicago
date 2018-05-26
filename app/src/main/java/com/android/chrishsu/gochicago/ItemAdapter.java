@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class ItemAdapter extends ArrayAdapter<Item> {
 
     public ItemAdapter(Context context, ArrayList<Item> items) {
-        super(context, 0 , items);
+        super(context, 0, items);
     }
 
     @NonNull
@@ -24,7 +24,7 @@ public class ItemAdapter extends ArrayAdapter<Item> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         View listItemView = convertView;
 
-        if (listItemView == null){
+        if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
 
@@ -44,7 +44,7 @@ public class ItemAdapter extends ArrayAdapter<Item> {
         return listItemView;
     }
 
-    private void showReviewStar(View listview, int star){
+    private void showReviewStar(View listview, int star) {
         ImageView imageViewStart1 = (ImageView) listview.findViewById(R.id.review_star1);
         ImageView imageViewStart2 = (ImageView) listview.findViewById(R.id.review_star2);
         ImageView imageViewStart3 = (ImageView) listview.findViewById(R.id.review_star3);

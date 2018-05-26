@@ -6,8 +6,8 @@
 
     <ImageView
         android:id="@+id/image"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
+        android:layout_width="@dimen/list_height"
+        android:layout_height="@dimen/list_height"
         android:layout_gravity="center_vertical|center_horizontal"
         android:layout_weight="1"
         android:padding="0dp"
@@ -37,12 +37,13 @@
             android:id="@+id/location"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_gravity="center_horizontal"
+            android:gravity="bottom"
             android:layout_weight="1" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_gravity="bottom"
             android:layout_weight="1">
 
             <TextView
@@ -121,11 +122,12 @@
     </LinearLayout>
 
     <ImageView
-        android:layout_width="26dp"
-        android:layout_height="26dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
         android:layout_gravity="center_horizontal|center_vertical"
         android:layout_weight="1"
         android:scaleType="fitCenter"
+        android:layout_marginRight="-8dp"
         android:src="@drawable/ic_view_next"
         android:tint="@color/colorPrimary" />
 
