@@ -12,9 +12,9 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class SightsFragment extends Fragment {
+public class TourFragment extends Fragment {
 
-    public SightsFragment() {
+    public TourFragment() {
         //empty constructor
     }
 

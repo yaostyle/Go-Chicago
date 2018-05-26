@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Go Chicago!</string>
-    <string name="category_name_sights">Sights</string>
+    <string name="category_name_tour">City Tour</string>
+    <string name="category_name_food">Food</string>
+    <string name="category_name_hotel">Hotel</string>
+    <string name="category_name_mustsee">Must-See</string>
 </resources>
