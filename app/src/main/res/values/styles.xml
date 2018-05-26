@@ -16,7 +16,7 @@
         <item name="elevation">0dp</item>
     </style>
 
-    <!-- Style for a tab that displays a category name -->
+    <!-- CategoryTab style -->
     <style name="CategoryTab" parent="Widget.Design.TabLayout">
         <item name="tabIndicatorColor">@android:color/white</item>
         <item name="tabSelectedTextColor">@color/tabBarTextSelected</item>
@@ -24,7 +24,7 @@
         <item name="tabTextAppearance">@style/CategoryTabTextAppearance</item>
     </style>
 
-    <!-- Text appearance style for a category tab -->
+    <!-- CategoryTabTextAppearance -->
     <style name="CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
         <item name="android:textColor">#ffced7</item>
         <item name="android:textSize">16sp</item>
