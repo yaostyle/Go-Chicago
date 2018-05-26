@@ -5,11 +5,13 @@ public class Item {
     private String mTitle;
     private int mImageResourceId;
     private String mLocation;
+    private int mReviewStar;
 
-    public Item(String title, int imageResourceId, String location) {
+    public Item(String title, int imageResourceId, String location, int reviewStart) {
         mTitle = title;
         mImageResourceId = imageResourceId;
         mLocation = location;
+        mReviewStar = reviewStart;
     }
 
     public String getTitle() {
@@ -23,4 +25,6 @@ public class Item {
     public String getLocation() {
         return mLocation;
     }
+
+    public int getReviewStar() { return mReviewStar; }
 }

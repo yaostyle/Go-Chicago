@@ -29,16 +29,38 @@ public class SightsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.item_listview, container, false);
 
         final ArrayList<Item> items = new ArrayList<Item>();
-        items.add(new Item("Chicago Tour", R.drawable.sights_chicago_architecture_tour, "Chicago Downtown"));
-        items.add(new Item("Chicago Tour", R.drawable.sights_chicago_architecture_tour, "Chicago Downtown"));
-        items.add(new Item("Chicago Tour", R.drawable.sights_chicago_architecture_tour, "Chicago Downtown"));
-        items.add(new Item("Chicago Tour", R.drawable.sights_chicago_architecture_tour, "Chicago Downtown"));
-        items.add(new Item("Chicago Tour", R.drawable.sights_chicago_architecture_tour, "Chicago Downtown"));
-        items.add(new Item("Chicago Tour", R.drawable.sights_chicago_architecture_tour, "Chicago Downtown"));
-        items.add(new Item("Chicago Tour", R.drawable.sights_chicago_architecture_tour, "Chicago Downtown"));
-        items.add(new Item("Chicago Tour", R.drawable.sights_chicago_architecture_tour, "Chicago Downtown"));
-
-
+        items.add(new Item("Chicago Tour",
+                R.drawable.sights_chicago_architecture_tour,
+                "Chicago Downtown",
+                1));
+        items.add(new Item("Chicago Tour",
+                R.drawable.sights_chicago_architecture_tour,
+                "Chicago Downtown",
+                2));
+        items.add(new Item("Chicago Tour",
+                R.drawable.sights_chicago_architecture_tour,
+                "Chicago Downtown",
+                3));
+        items.add(new Item("Chicago Tour",
+                R.drawable.sights_chicago_architecture_tour,
+                "Chicago Downtown",
+                4));
+        items.add(new Item("Chicago Tour",
+                R.drawable.sights_chicago_architecture_tour,
+                "Chicago Downtown",
+                5));
+        items.add(new Item("Chicago Tour",
+                R.drawable.sights_chicago_architecture_tour,
+                "Chicago Downtown",
+                5));
+        items.add(new Item("Chicago Tour",
+                R.drawable.sights_chicago_architecture_tour,
+                "Chicago Downtown",
+                5));
+        items.add(new Item("Chicago Tour",
+                R.drawable.sights_chicago_architecture_tour,
+                "Chicago Downtown",
+                0));
 
         ItemAdapter adapter = new ItemAdapter(getActivity(), items);
 
