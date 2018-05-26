@@ -19,14 +19,14 @@
     <!-- Style for a tab that displays a category name -->
     <style name="CategoryTab" parent="Widget.Design.TabLayout">
         <item name="tabIndicatorColor">@android:color/white</item>
-        <item name="tabSelectedTextColor">@color/colorAccent</item>
+        <item name="tabSelectedTextColor">@color/tabBarTextSelected</item>
         <item name="tabBackground">@color/colorPrimary</item>
         <item name="tabTextAppearance">@style/CategoryTabTextAppearance</item>
     </style>
 
     <!-- Text appearance style for a category tab -->
     <style name="CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
-        <item name="android:textColor">#A8A19E</item>
+        <item name="android:textColor">#ffced7</item>
         <item name="android:textSize">16sp</item>
     </style>
 
