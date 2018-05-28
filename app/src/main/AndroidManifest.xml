@@ -16,6 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ItemDetail"
+            android:parentActivityName="com.android.chrishsu.gochicago.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.chrishsu.gochicago.MainActivity" />
+
+        </activity>
     </application>
 
 </manifest>

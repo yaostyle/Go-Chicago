@@ -1,5 +1,6 @@
 package com.android.chrishsu.gochicago;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -63,7 +64,7 @@ public class TourFragment extends Fragment {
                 "Chicago Downtown",
                 0));
 
-        ItemAdapter adapter = new ItemAdapter(getActivity(), items);
+        final ItemAdapter adapter = new ItemAdapter(getActivity(), items);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);
@@ -71,7 +72,10 @@ public class TourFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(getContext(), "clicked", Toast.LENGTH_SHORT).show();
+                Item currentItem = items.get(i);
+                Intent itemDetailIntent = new Intent(getContext(), ItemDetail.class);
+                itemDetailIntent.putExtra("ITEM_TITLE", currentItem.getTitle());
+                startActivity(itemDetailIntent);
             }
         });
 

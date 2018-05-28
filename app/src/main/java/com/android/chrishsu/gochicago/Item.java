@@ -27,4 +27,5 @@ public class Item {
     }
 
     public int getReviewStar() { return mReviewStar; }
+
 }
