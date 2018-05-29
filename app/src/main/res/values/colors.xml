@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#ff2d54</color>
     <color name="colorPrimaryDark">#ff2d54</color>
-    <color name="colorAccent">#ff2d54</color>
+    <color name="colorAccent">#ff4264</color>
     <color name="tabBarTextSelected">#ffffff</color>
     <color name="actionBarPrimaryText">#a80000</color>
     <color name="itemTitleText">#000000</color>

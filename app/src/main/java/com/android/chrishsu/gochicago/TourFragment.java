@@ -31,21 +31,21 @@ public class TourFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.item_listview, container, false);
 
         final ArrayList<Item> items = new ArrayList<Item>();
-        items.add(new Item("Chicago Tour",
+        items.add(new Item("Chicago Architecture River Cruise",
                 R.drawable.sights_chicago_architecture_tour,
-                "Chicago Downtown",
-                1));
-        items.add(new Item("Chicago Tour",
-                R.drawable.sights_chicago_architecture_tour,
-                "Chicago Downtown",
-                2));
-        items.add(new Item("Chicago Tour",
-                R.drawable.sights_chicago_architecture_tour,
-                "Chicago Downtown",
-                3));
-        items.add(new Item("Chicago Tour",
-                R.drawable.sights_chicago_architecture_tour,
-                "Chicago Downtown",
+                "Michigan Ave",
+                5));
+        items.add(new Item("Millennium Park",
+                R.drawable.sights_millennium_park,
+                "Michigan Ave",
+                5));
+        items.add(new Item("Navy Pier",
+                R.drawable.sights_navy_pier,
+                "E Grand Ave",
+                5));
+        items.add(new Item("Skydeck Chicago Admission",
+                R.drawable.sights_skydeck,
+                "Wacker Drive",
                 4));
         items.add(new Item("Chicago Tour",
                 R.drawable.sights_chicago_architecture_tour,
@@ -55,14 +55,6 @@ public class TourFragment extends Fragment {
                 R.drawable.sights_chicago_architecture_tour,
                 "Chicago Downtown",
                 5));
-        items.add(new Item("Chicago Tour",
-                R.drawable.sights_chicago_architecture_tour,
-                "Chicago Downtown",
-                5));
-        items.add(new Item("Chicago Tour",
-                R.drawable.sights_chicago_architecture_tour,
-                "Chicago Downtown",
-                0));
 
         final ItemAdapter adapter = new ItemAdapter(getActivity(), items);
 
