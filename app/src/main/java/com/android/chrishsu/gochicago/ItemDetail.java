@@ -3,6 +3,7 @@ package com.android.chrishsu.gochicago;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
@@ -27,7 +28,6 @@ public class ItemDetail extends AppCompatActivity {
         int currentItemIndex = getItemIndexByTitle(item_title);
 
         inflateLayout(currentItemIndex);
-
 
     }
 
@@ -61,6 +61,11 @@ public class ItemDetail extends AppCompatActivity {
 
         itemPrice.setText(getString(R.string.item_price_txt,
                 String.valueOf(mItems.get(index).getPrice())));
+    }
+
+    @Override
+    public void onBackPressed() {
+        moveTaskToBack(true);
     }
 
     private int getItemIndexByTitle(String title) {
@@ -203,7 +208,7 @@ public class ItemDetail extends AppCompatActivity {
                 (float) 35));
 
         items.add(new Item("Lou Malnati's Pizzeria",
-                R.drawable.sights_art_institute,
+                R.drawable.food_lou_malnati_pizza,
                 "State St",
                 5,
                 new String[] {"Fast Pass Admission to the Art Institute of Chicago, located " +
@@ -214,7 +219,13 @@ public class ItemDetail extends AppCompatActivity {
                                 "van Gogh, Chagall and Pollock",
                         "Complimentary tour available daily at noon; guests under 14 years " +
                                 "of age receive free admission!"},
-                "Lou Malnati’s opened the doors to its 33rd pizzeria on Monday, July 4, 2011. Located at 1120 N. State Street in the city’s Gold Coast neighborhood, this pizzeria is the company’s new flagship location, and has the largest seating capacity of all the Malnati restaurants to date. Lou Malnati's is famous for its Chicago-style deep dish pizza and has become a staple for local Chicagoans, as well as a mandatory destination for tourists.",
+                "Lou Malnati’s opened the doors to its 33rd pizzeria on Monday, " +
+                        "July 4, 2011. Located at 1120 N. State Street in the city’s " +
+                        "Gold Coast neighborhood, this pizzeria is the company’s new " +
+                        "flagship location, and has the largest seating capacity of " +
+                        "all the Malnati restaurants to date. \n\nLou Malnati's is famous " +
+                        "for its Chicago-style deep dish pizza and has become a staple " +
+                        "for local Chicagoans, as well as a mandatory destination for tourists.",
                 "Lou Malnati's Pizzeria",
                 (float) 5));
 
