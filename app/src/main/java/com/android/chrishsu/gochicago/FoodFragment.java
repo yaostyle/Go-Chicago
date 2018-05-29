@@ -27,9 +27,9 @@ public class FoodFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.item_listview, container, false);
 
         final ArrayList<Item> items = new ArrayList<Item>();
-        items.add(new Item("Uno Pizza",
+        items.add(new Item("Lou Malnati's Pizzeria",
                 R.drawable.sights_chicago_architecture_tour,
-                "Chicago Downtown",
+                "State St",
                 5));
 
         ItemAdapter adapter = new ItemAdapter(getActivity(), items);

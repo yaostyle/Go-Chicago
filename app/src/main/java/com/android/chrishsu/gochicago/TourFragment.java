@@ -47,14 +47,14 @@ public class TourFragment extends Fragment {
                 R.drawable.sights_skydeck,
                 "Wacker Drive",
                 4));
-        items.add(new Item("Chicago Tour",
-                R.drawable.sights_chicago_architecture_tour,
-                "Chicago Downtown",
+        items.add(new Item("History and Riverwalk Tour",
+                R.drawable.sights_riverwalk,
+                "Michigan Ave",
                 5));
-        items.add(new Item("Chicago Tour",
-                R.drawable.sights_chicago_architecture_tour,
-                "Chicago Downtown",
-                5));
+        items.add(new Item("The Art Institute of Chicago",
+                R.drawable.sights_art_institute,
+                "Grant Park",
+                4));
 
         final ItemAdapter adapter = new ItemAdapter(getActivity(), items);
 

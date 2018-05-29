@@ -79,7 +79,7 @@ public class ItemDetail extends AppCompatActivity {
     }
 
     private void initItems(ArrayList<Item> items) {
-        // final ArrayList<Item> items = new ArrayList<Item>();
+
         items.add(new Item("Chicago Architecture River Cruise",
                 R.drawable.sights_chicago_architecture_tour,
                 "Michigan Ave",
@@ -141,7 +141,8 @@ public class ItemDetail extends AppCompatActivity {
                 "Wacker Drive",
                 5,
                 new String[] {"Enjoy views of Chicago from the 103rd floor of Willis Tower",
-                        "Experience the thrill of the Ledge, a glass balcony 1,353 feet (412.4 meters) off the ground",
+                        "Experience the thrill of the Ledge, a glass balcony 1,353 feet " +
+                                "(412.4 meters) off the ground",
                         "Learn about the history of the Skydeck in the Skydeck Theatre",
                         "Explore interactive exhibits designed for the whole family",
                         "With mobile tickets, simply scan your phone for direct entry"},
@@ -156,6 +157,66 @@ public class ItemDetail extends AppCompatActivity {
                         "(412.4 meters) tall.",
                 "Skydeck",
                 (float) 24));
+
+        items.add(new Item("History and Riverwalk Tour",
+                R.drawable.sights_riverwalk,
+                "Michigan Ave",
+                5,
+                new String[] {"Enjoy a historical walking tour of downtown Chicago",
+                        "Compare the city’s past with its present",
+                        "Learn about the history of the Skydeck in the Skydeck Theatre",
+                        "See some of the city’s most popular attractions and landmark locations",
+                        "Pictorial view book plus headset included"},
+                "Discover the true story of Chicago’s history and learn how this " +
+                        "once-swampland became one of the biggest and most-popular cities " +
+                        "in the world on this 2.5-hour walking tour. Hear stories about " +
+                        "the Windy City’s past — from the Fort Dearborn Massacre to the " +
+                        "Great Chicago Fire, the 1893 World’s Fair and much more. \n\nStroll " +
+                        "the streets, across the Michigan Avenue Bridge to the Chicago " +
+                        "Riverwalk and beyond. Also included: a personal, pictorial view " +
+                        "book to compare the city’s past with the present plus a headset to " +
+                        "hear the guide clearly.",
+                "Chicago's Finest Tours",
+                (float) 25));
+
+        items.add(new Item("The Art Institute of Chicago",
+                R.drawable.sights_art_institute,
+                "Grant Park",
+                4,
+                new String[] {"Fast Pass Admission to the Art Institute of Chicago, located " +
+                        "in Grant Park. Bypass General Admission lines and gain expedited " +
+                        "access to collection galleries and special exhibitions",
+                        "Browse an extraordinary collection of Impressionist and modern art",
+                        "Admire masterpieces by artists such as Monet, Renoir, Seurat, " +
+                                "van Gogh, Chagall and Pollock",
+                        "Complimentary tour available daily at noon; guests under 14 years " +
+                                "of age receive free admission!"},
+                "Explore the Art Institute, Chicago’s world-class art museum " +
+                        "and the second-largest in the United States, with this Fast Pass " +
+                        "Admission ticket. Situated in Grant Park, the museum’s incredible " +
+                        "range of impressionist, post-impressionist, modern and contemporary " +
+                        "works is near the top of the list of Chicago’s must-see sights.\n\n" +
+                        "Among the artists on display are works by Pollack, van Gogh, " +
+                        "Renoir, Monet and Picasso plus, plus a striking new Modern Wing " +
+                        "and cutting edge graphic and industrial design.",
+                "The Art Institute",
+                (float) 35));
+
+        items.add(new Item("Lou Malnati's Pizzeria",
+                R.drawable.sights_art_institute,
+                "State St",
+                5,
+                new String[] {"Fast Pass Admission to the Art Institute of Chicago, located " +
+                        "in Grant Park. Bypass General Admission lines and gain expedited " +
+                        "access to collection galleries and special exhibitions",
+                        "Browse an extraordinary collection of Impressionist and modern art",
+                        "Admire masterpieces by artists such as Monet, Renoir, Seurat, " +
+                                "van Gogh, Chagall and Pollock",
+                        "Complimentary tour available daily at noon; guests under 14 years " +
+                                "of age receive free admission!"},
+                "Lou Malnati’s opened the doors to its 33rd pizzeria on Monday, July 4, 2011. Located at 1120 N. State Street in the city’s Gold Coast neighborhood, this pizzeria is the company’s new flagship location, and has the largest seating capacity of all the Malnati restaurants to date. Lou Malnati's is famous for its Chicago-style deep dish pizza and has become a staple for local Chicagoans, as well as a mandatory destination for tourists.",
+                "Lou Malnati's Pizzeria",
+                (float) 5));
 
 
     }
