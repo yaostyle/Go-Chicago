@@ -6,4 +6,6 @@
     <string name="category_name_mustsee">Must-See</string>
     <string name="item_price_txt">Starting from $%1$s</string>
     <string name="item_provider_txt">By: %1$s</string>
+    <string name="item_hightlight_txt">Hightlight</string>
+    <string name="item_overview_txt">Overview</string>
 </resources>

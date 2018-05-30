@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import java.util.Locale;
 
+//Main Activity
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -19,14 +20,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Create ViewPager
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
 
+        //Create CategoryAdapter and bind with ViewPager
         CategoryAdapter adapter = new CategoryAdapter(this, getSupportFragmentManager());
         viewPager.setAdapter(adapter);
 
+        //Create TabLayout and setup with ViewPager
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
-
 
     }
 

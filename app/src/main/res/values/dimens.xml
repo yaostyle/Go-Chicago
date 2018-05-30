@@ -2,4 +2,11 @@
 <resources>
     <dimen name="list_height">100dp</dimen>
     <dimen name="star_size">18dp</dimen>
+    <dimen name="item_detail_image_height">230dp</dimen>
+    <dimen name="item_detail_box_height">140dp</dimen>
+    <dimen name="item_detail_text_title">30sp</dimen>
+    <dimen name="item_detail_text_location">16sp</dimen>
+    <dimen name="item_detail_text_provider">16dp</dimen>
+    <dimen name="item_detail_sub_header_text">20sp</dimen>
+    <dimen name="item_detail_body_text">18sp</dimen>
 </resources>

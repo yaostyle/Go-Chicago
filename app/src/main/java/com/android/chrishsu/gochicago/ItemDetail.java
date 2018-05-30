@@ -11,54 +11,77 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+//Create ItemDetail Activity
 public class ItemDetail extends AppCompatActivity {
+    //Init a global mItems
     final ArrayList<Item> mItems = new ArrayList<Item>();
 
+    //Override onCreate method
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item_detail);
 
+        //First, retrieve string value from Intent
         String item_title = getIntent().getStringExtra("ITEM_TITLE");
+
+        //Set its title
         setTitle(item_title);
 
+        //Init all the item data
         initItems(mItems);
 
+        //Get the current item index
         int currentItemIndex = getItemIndexByTitle(item_title);
 
+        //Inflate layout
         inflateLayout(currentItemIndex);
 
     }
 
+    //Function to inflate layout by position index
     private void inflateLayout(int index) {
+        //Get image view and set its resource ID
         ImageView itemImage = (ImageView) findViewById(R.id.item_image);
         itemImage.setImageResource(mItems.get(index).getImageResourceId());
 
+        //Get title view and set its value
         TextView itemTitle = (TextView) findViewById(R.id.item_title);
         itemTitle.setText(mItems.get(index).getTitle());
 
+        //Get location view and set its value
         TextView itemLocation = (TextView) findViewById(R.id.item_location);
         itemLocation.setText(mItems.get(index).getLocation());
 
+        //Get provide view and set its value
         TextView itemProvider = (TextView) findViewById(R.id.item_provider);
         itemProvider.setText(getString(R.string.item_provider_txt,
                 mItems.get(index).getProvider()));
 
+        //Get hightlights view
         TextView itemHighlight = (TextView) findViewById(R.id.item_hightlights);
+
+        //Create a String array for current item's string list
         String[] highlights = mItems.get(index).getHighlights();
+
+        //Create a a new String array
         String highlights_text = "";
 
+        //Loop through the value and manipulate the string list
         for (int i = 0; i < highlights.length; i++) {
+            //Adds * to each list, and break at the end
             highlights_text += "* " + highlights[i] + "\n\n";
         }
+        //Set the final string list value to the view
         itemHighlight.setText(highlights_text);
 
+        //Get overview view and set its value
         TextView itemOverview = (TextView) findViewById(R.id.item_overview);
         itemOverview.setText(mItems.get(index).getOverview());
 
+        //Get price view and set its value
         TextView itemPrice = (TextView) findViewById(R.id.item_price);
-
         itemPrice.setText(getString(R.string.item_price_txt,
                 String.valueOf(mItems.get(index).getPrice())));
     }
@@ -83,6 +106,7 @@ public class ItemDetail extends AppCompatActivity {
         return -1;
     }
 
+    //Function to init and create item data
     private void initItems(ArrayList<Item> items) {
 
         items.add(new Item("Chicago Architecture River Cruise",
