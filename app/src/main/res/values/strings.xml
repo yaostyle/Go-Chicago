@@ -9,107 +9,561 @@
     <string name="item_provider_txt">By: %1$s</string>
     <string name="item_hightlight_txt">Hightlight</string>
     <string name="item_overview_txt">Overview</string>
+    <string name="intent_extra_item_title">ITEM_TITLE</string>
 
     <!-- Item data strings -->
-    
+
     <!-- Tours -->
     <string name="tour_chicago_architecture_title">Chicago Architecture River Cruise</string>
     <string name="tour_chicago_architecture_location">Michigan Ave</string>
     <string name="tour_chicago_architecture_review">5</string>
+    <string-array name="tour_chicago_architecture_highlights">
+        <item>See all of Chicago's architectural masterpieces in a single tour</item>
+        <item>Choose from multiple departure times to fit your busy schedule</item>
+        <item>Learn about the city's architectural history through an expert's live narration</item>
+        <item>Prebook this must-do Chicago activity, which frequently sells out</item>
+    </string-array>
+    <string name="tour_chicago_architecture_overview">
+                Get views of Chicago’s most famous buildings,
+                as well as insider info from an expert guide,
+                on this architecture-focused cruise.
+                You’ll see all the most important buildings on one tour,
+                a hard-to-accomplish task by foot. \n\nView the skyline from
+                the Chicago River while listening to live commentary.
+                Snap photos of the Willis (Sears) Tower, Old Post Office,
+                360 Chicago Observation Deck, Wrigley Building, and Aon Center.
+    </string>
+    <string name="tour_chicago_architecture_provider">Shoreline Sightseeing</string>
+    <string name="tour_chicago_architecture_price">43.68</string>
+
 
     <string name="tour_millennium_park_title">Millennium Park</string>
     <string name="tour_millennium_park_location">Michigan Ave</string>
     <string name="tour_millennium_park_review">5</string>
+    <string-array name="tour_millennium_park_highlights">
+        <item>Guided Chicago city tour includes areas that many other tours skip</item>
+        <item>Travel with a small group, which ensures personalized attention</item>
+        <item>Air-conditioned minibus can travel where larger coaches can't navigate</item>
+        <item>Upgrade to include a popular Chicago River architecture boat cruise</item>
+    </string-array>
+    <string name="tour_millennium_park_overview">
+                Check many Chicago\'s landmarks off your must-see
+                list with this small-group sightseeing tour aboard
+                a minibus. Cover more ground than on foot, and hit
+                lots of highlights over the tour. \n\nYou\’ll see the
+                Museum Campus, Rookery, and Lincoln Park, accompanied
+                by in-depth commentary from your guide. Upgrade to
+                include a 75-minute Chicago architecture tour by boat,
+                one of the most popular tours in the city.
+    </string>
+    <string name="tour_millennium_park_provider">See it All Chicago Tours</string>
+    <string name="tour_millennium_park_price">35</string>
+
 
     <string name="tour_navy_pier_title">Navy Pier</string>
     <string name="tour_navy_pier_location">E Grand Ave</string>
     <string name="tour_navy_pier_review">5</string>
+    <string-array name="tour_navy_pier_highlights">
+        <item>Exceptional service to our guests and partners</item>
+        <item>An authentic Chicago experience</item>
+        <item>An architecturally stunning environment offering access
+                to extraordinary vistas of the lake, land and skyline
+        </item>
+    </string-array>
+    <string name="tour_navy_pier_overview">
+                Originally completed in 1916 as part of Daniel Burnham\'s plan for
+                Chicago, Navy Pier is an iconic city landmark inspiring discovery and
+                wonder. \n\nSince its reopening in 1995, more than 180 million visitors
+                have come to enjoy the Pier's 50 acres of unparalleled attractions
+                and experiences. As Navy Pier enters its second century, the venue is
+                evolving into an accessible, year-round centerpiece for Chicago’s
+                diverse arts and cultural treasures.
+    </string>
+    <string name="tour_navy_pier_provider">Navy Pier</string>
+    <string name="tour_navy_pier_price">25</string>
+
 
     <string name="tour_skydeck_title">Skydeck Chicago Admission</string>
     <string name="tour_skydeck_location">Wacker Dr</string>
     <string name="tour_skydeck_review">4</string>
+    <string-array name="tour_skydeck_highlights">
+        <item>Enjoy views of Chicago from the 103rd floor of Willis Tower</item>
+        <item>Experience the thrill of the Ledge, a glass balcony 1,353 feet
+              (412.4 meters) off the ground
+        </item>
+        <item>Learn about the history of the Skydeck in the Skydeck Theatre</item>
+        <item>Explore interactive exhibits designed for the whole family</item>
+        <item>With mobile tickets, simply scan your phone for direct entry</item>
+    </string-array>
+    <string name="tour_skydeck_overview">
+                Visit the Skydeck, located on the 103rd floor of the Willis Tower
+                (formerly the Sears Tower) with this pre-paid admission ticket.
+                From the highest point in the city, look out on Chicago\'s skyline for
+                panoramic views of the sprawling Windy City. Peruse the interactive
+                displays and exhibits showcasing Chicago's history, which are geared
+                toward curious learners of all ages. Then walk out on to the Ledge,
+                a glass balcony that allows views of Navy Pier and Wrigley Field from
+                one of the world's tallest buildings, standing 1,353 feet
+                (412.4 meters) tall.
+    </string>
+    <string name="tour_skydeck_provider">Skydeck</string>
+    <string name="tour_skydeck_price">24</string>
+
 
     <string name="tour_riverwalk_title">History and Riverwalk Tour</string>
     <string name="tour_riverwalk_location">Michigan Ave</string>
     <string name="tour_riverwalk_review">5</string>
+    <string-array name="tour_riverwalk_highlights">
+        <item>Enjoy a historical walking tour of downtown Chicago</item>
+        <item>Compare the city’s past with its present</item>
+        <item>Learn about the history of the Skydeck in the Skydeck Theatre</item>
+        <item>See some of the city’s most popular attractions and landmark locations</item>
+        <item>Pictorial view book plus headset included</item>
+    </string-array>
+    <string name="tour_riverwalk_overview">
+                Discover the true story of Chicago\’s history and learn how this
+                once-swampland became one of the biggest and most-popular cities
+                in the world on this 2.5-hour walking tour. Hear stories about
+                the Windy City\’s past — from the Fort Dearborn Massacre to the
+                Great Chicago Fire, the 1893 World’s Fair and much more. \n\nStroll
+                the streets, across the Michigan Avenue Bridge to the Chicago
+                Riverwalk and beyond. Also included: a personal, pictorial view
+                book to compare the city\’s past with the present plus a headset to
+                hear the guide clearly.
+    </string>
+    <string name="tour_riverwalk_provider">Chicago\'s Finest Tours</string>
+    <string name="tour_riverwalk_price">25</string>
+
 
     <string name="tour_art_institute_title">The Art Institute of Chicago</string>
     <string name="tour_art_institute_location">Grant Park</string>
     <string name="tour_art_institute_review">4</string>
-    
+    <string-array name="tour_art_institute_highlights">
+        <item>Fast Pass Admission to the Art Institute of Chicago, located
+              in Grant Park. Bypass General Admission lines and gain expedited
+              access to collection galleries aßnd special exhibitions
+        </item>
+        <item>Browse an extraordinary collection of Impressionist and modern art</item>
+        <item>Admire masterpieces by artists such as Monet, Renoir, Seurat
+              van Gogh, Chagall and Pollock</item>
+        <item>Complimentary tour available daily at noon; guests under 14 years
+              of age receive free admission!
+        </item>
+    </string-array>
+    <string name="tour_art_institute_overview">
+                Explore the Art Institute, Chicago’s world-class art museum
+                and the second-largest in the United States, with this Fast Pass
+                Admission ticket. Situated in Grant Park, the museum’s incredible
+                range of impressionist, post-impressionist, modern and contemporary
+                works is near the top of the list of Chicago’s must-see sights.\n\n
+                Among the artists on display are works by Pollack, van Gogh,
+                Renoir, Monet and Picasso plus, plus a striking new Modern Wing
+                and cutting edge graphic and industrial design.
+    </string>
+    <string name="tour_art_institute_provider">The Art Institute</string>
+    <string name="tour_art_institute_price">35</string>
+
+
     <!-- Food -->
     <string name="food_lou_malanti_title">Lou Malnati\'s Pizzeria</string>
     <string name="food_lou_malanti_location">State St</string>
     <string name="food_lou_malanti_review">5</string>
-    
+    <string-array name="food_lou_malanti_highlights">
+        <item>Italian</item>
+        <item>Pizza</item>
+        <item>Vegetarian Friendly</item>
+    </string-array>
+    <string name="food_lou_malanti_overview">
+                Lou Malnati\’s opened the doors to its 33rd pizzeria on Monday,
+                July 4, 2011. Located at 1120 N. State Street in the city\’s
+                Gold Coast neighborhood, this pizzeria is the company’s new
+                flagship location, and has the largest seating capacity of
+                all the Malnati restaurants to date. \n\nLou Malnati\'s is famous
+                for its Chicago-style deep dish pizza and has become a staple
+                for local Chicagoans, as well as a mandatory destination for tourists.
+    </string>
+    <string name="food_lou_malanti_provider">"Lou Malnati\'s Pizzeria"</string>
+    <string name="food_lou_malanti_price">15</string>
+
+
     <string name="food_girl_the_goat_title">Girl &amp; The Goat</string>
     <string name="food_girl_the_goat_location">Randolph St</string>
     <string name="food_girl_the_goat_review">5</string>
-    
+    <string-array name="food_girl_the_goat_highlights">
+        <item>American</item>
+        <item>Vegetarian Friendly</item>
+        <item>Gluten Free Options</item>
+        <item>Vegan Options</item>
+    </string-array>
+    <string name="food_girl_the_goat_overview">
+                Girl &amp; the Goat has been serving fun foods, craft beers,
+                and making wine in a rustic and kick-butt environment since
+                summer 2010. The restaurant opens at 4:30 every day, and stays
+                open until 11pm on weeknights and until midnight on Fridays
+                and Saturdays (until those last late night eaters scrape their
+                fork across the plate for the last time, or finish licking
+                their plates until they're shiny and clean). \n\nThe Goat\'s menu
+                is divided into three categories: Vegetable, Fish, and of
+                course Meat—while vegetable, fish, or meat are respectively
+                the main stars of their categories, there are crossovers in
+                each area so you\'ll get a little bit of everything.
+    </string>
+    <string name="food_girl_the_goat_provider">Girl &amp; The Goat</string>
+    <string name="food_girl_the_goat_price">15</string>
+
+
     <string name="food_portillo_title">Portillo\'s</string>
     <string name="food_portillo_location">Ontario St</string>
     <string name="food_portillo_review">4</string>
-    
+    <string-array name="food_portillo_highlights">
+        <item>American</item>
+        <item>Fast Food</item>
+        <item>Soups</item>
+        <item>Vegetarian Friendly</item>
+    </string-array>
+    <string name="food_portillo_overview">
+                Home to America\'s favorite Chicago-style hot dogs, Italian
+                beef, burgers, salads, and chocolate cake. \n\nThe first
+                Portillo\'s hot dog stand known as \"The Dog House\" opens
+                in 1963 on North Avenue in Villa Park. Owner and founder
+                Dick Portillo invests $1,100 into a 6' x 12' trailer
+                without a bathroom or running water. To get the water
+                he needs, he runs 250 feet of garden hose from a nearby
+                building into the trailer.
+    </string>
+    <string name="food_portillo_provider">Portillo\'s</string>
+    <string name="food_portillo_price">13</string>
+
+
     <string name="food_wildberry_title">Wildberry Pancakes and Cafe</string>
     <string name="food_wildberry_location">Randolph St</string>
     <string name="food_wildberry_review">5</string>
-    
+    <string-array name="food_wildberry_highlights">
+        <item>American</item>
+        <item>Cafe</item>
+        <item>Vegetarian Friendly</item>
+        <item>Vegan Options</item>
+        <item>Gluten Free Options</item>
+    </string-array>
+    <string name="food_wildberry_overview">
+                Get your day off to a great start” at this
+                “slightly upscale”
+                breakfast- and lunch-only pancake chain, where an
+                “amazingly big” American menu offers “more flair”
+                than expected plus “huge”, “reasonably priced”
+                portions; it\'s “mobbed” on weekends, so “be prepared
+                to wait.
+    </string>
+    <string name="food_wildberry_provider">Wildberry</string>
+    <string name="food_wildberry_price">15</string>
+
+
     <string name="food_smoque_title">Smoque BBQ</string>
     <string name="food_smoque_location">Pulaski Rd</string>
     <string name="food_smoque_review">5</string>
-    
+    <string-array name="food_smoque_highlights">
+        <item>American</item>
+        <item>Barbecue</item>
+        <item>Gluten Free Options</item>
+    </string-array>
+    <string name="food_smoque_overview">
+                Smoque (smōk) BBQ is a neighborhood kind of place that cooks up
+                BBQ good enough to make it a true destination. It was created by
+                five regular guys who happen to be passionate about food in general
+                and BBQ in particular.
+    </string>
+    <string name="food_smoque_provider">Smoque BBQ</string>
+    <string name="food_smoque_price">20</string>
+
+
     <string name="food_bohemian_title">Bohemian House</string>
     <string name="food_bohemian_location">Illinois St</string>
     <string name="food_bohemian_review">5</string>
-    
+    <string-array name="food_bohemian_highlights">
+        <item>German</item>
+        <item>Polish</item>
+        <item>European</item>
+        <item>Czech</item>
+        <item>Eastern European</item>
+        <item>Central European</item>
+        <item>Hungarian</item>
+        <item>Austrian</item>
+        <item>Vegetarian Friendly</item>
+    </string-array>
+    <string name="food_bohemian_overview">
+                Located in Chicago\'s River North neighborhood at State and
+                Illinois (11 W. Illinois), Bohemian House captures the
+                lighthearted and carefree essence of Bohemian culture.
+                Exposed brick walls and wood timber, eclectic décor, warm
+                earth tones and soft lighting set the backdrop for a comfortable
+                and sociable dining experience. Guest can expect to enjoy an
+                original menu of approachable Bohemian-inspired fare with
+                influences from the Czech Repulic, Germany and Austria. \n\nAcquainting
+                Central Europe to the Central U.S., our culinary team takes a
+                fresh approach to traditional favorites, utilizing the best of
+                what\'s in season.
+    </string>
+    <string name="food_bohemian_provider">Bohemian House</string>
+    <string name="food_bohemian_price">40</string>
+
+
     <!-- Hotel -->
     <string name="hotel_peninsula_title">The Peninsula Chicago</string>
     <string name="hotel_peninsula_location">N Michigan Ave</string>
     <string name="hotel_peninsula_review">5</string>
-    
+    <string-array name="hotel_peninsula_highlights">
+        <item>Free Wifi</item>
+        <item>Breakfast Available</item>
+        <item>Air Conditioning</item>
+        <item>Pool</item>
+        <item>Non-Smoking Hotel</item>
+    </string-array>
+    <string name="hotel_peninsula_overview">
+                Located at Water Tower Park on the \"Manificent Mile,\" the
+                city\’s premier shopping district, The Peninsula Chicago is the
+                city\'s most luxurious and sophisticated hotel, offering
+                guests all possible amenities and services. The Peninsula
+                Chicago is a proud recipient of the Five-Star, Five-Diamond
+                Award, and was also recently awarded \"#1 Large City Hotel In
+                US And Canada\" by readers of Travel + Leisure."
+    </string>
+    <string name="hotel_peninsula_provider">The Peninsula Chicago</string>
+    <string name="hotel_peninsula_price">525</string>
+
+
     <string name="hotel_langham_title">The Langham, Chicago</string>
     <string name="hotel_langham_location">Wabash Ave</string>
     <string name="hotel_langham_review">5</string>
-    
+    <string-array name="hotel_langham_highlights">
+        <item>Free Wifi</item>
+        <item>Parking</item>
+        <item>Breakfast Available</item>
+        <item>Air Conditioning</item>
+        <item>Pool</item>
+        <item>Non-Smoking Hotel</item>
+        <item>Restaurant</item>
+    </string-array>
+    <string name="hotel_langham_overview">
+                Legendary service and timeless British style in an iconic Chicago
+                landmark. The perfect blend of convenience and luxurious comfort
+                only at The Langham, Chicago. \n\nThe Langham, Chicago is
+                conveniently located within walking distance of the city\'s
+                business district, major attractions and Chicago\’s retail hub,
+                Magnificent Mile, making the hotel an ideal base from which
+                to explore the city or conduct business.
+    </string>
+    <string name="hotel_langham_provider">The Langham, Chicago</string>
+    <string name="hotel_langham_price">547</string>
+
+
     <string name="hotel_ace_title">Ace Hotel Chicago</string>
     <string name="hotel_ace_location">Morgan St</string>
     <string name="hotel_ace_review">4</string>
-    
+    <string-array name="hotel_ace_highlights">
+        <item>Free Wifi</item>
+        <item>Breakfast Available</item>
+        <item>Air Conditioning</item>
+        <item>Non-Smoking Hotel</item>
+        <item>Restaurant</item>
+        <item>Room Service</item>
+        <item>Suites</item>
+    </string-array>
+    <string name="hotel_ace_overview">
+                Ace Hotel Chicago lives in a stoic, industrial concrete
+                and glass building in the West Loop, once home to an
+                Italian-American cheesemaking company and, before that,
+                a pair of mysterious brothers. \n\nWe\'re walking distance to
+                the Morgan Lake L Station and some of the best food in
+                the city. You can throw a coin and hit Google (we don't
+                recommend it, they\'ve got cameras) and what once was
+                Oprah Winfrey\'s HQ."
+    </string>
+    <string name="hotel_ace_provider">Ace Hotel Chicago</string>
+    <string name="hotel_ace_price">404</string>
+
+
     <string name="hotel_guesthouse_title">The Guesthouse Hotel</string>
     <string name="hotel_guesthouse_location">Clark St</string>
     <string name="hotel_guesthouse_review">5</string>
+    <string-array name="hotel_guesthouse_highlights">
+        <item>Free Wifi</item>
+        <item>Air Conditioning</item>
+        <item>Non-Smoking Hotel</item>
+        <item>Room Service</item>
+        <item>Suites</item>
+        <item>Fitness Center</item>
+        <item>Kitchenette</item>
+    </string-array>
+    <string name="hotel_guesthouse_overview">
+                The Guesthouse Hotel was originally built in 2008 as
+                boutique condominiums, but soon found its groove as a place
+                for 10 unique—and spacious—vacation rentals. \n\nIn 2013,
+                The Guesthouse broke ground on a new building next door,
+                adding 15 more deluxe units, and a lobby, club room, retail
+                space, business center, and gym, to fully develop into an
+                all-accommodating boutique hotel.
+    </string>
+    <string name="hotel_guesthouse_provider">The Guesthouse Hotel</string>
+    <string name="hotel_guesthouse_price">499</string>
+
 
     <string name="hotel_emc2_title">Hotel EMC2, Autograph Collection</string>
     <string name="hotel_emc2_location">Ontario St</string>
     <string name="hotel_emc2_review">4</string>
+    <string-array name="hotel_emc2_highlights">
+        <item>Wifi</item>
+        <item>Parking</item>
+        <item>Breakfast Buffet</item>
+        <item>Air Conditioning</item>
+        <item>Non-Smoking Hotel</item>
+        <item>Restaurant</item>
+        <item>Room Service</item>
+    </string-array>
+    <string name="hotel_emc2_overview">
+                Immerse yourself in downtown Chicago\'s creative culture at
+                Hotel EMC2, Autograph Collection. Located in Streeterville,
+                our boutique hotel is within walking distance of the Theater
+                District, Navy Pier and a plethora of shops and eateries along
+                The Magnificent Mile.
+    </string>
+    <string name="hotel_emc2_provider">Hotel EMC2, Autograph Collection</string>
+    <string name="hotel_emc2_price">390</string>
+
 
     <string name="hotel_kimption_title">Kimpton Hotel Monaco Chicago</string>
     <string name="hotel_kimption_location">Wabash Ave</string>
     <string name="hotel_kimption_review">3</string>
+    <string-array name="hotel_kimption_highlights">
+        <item>Free Internet</item>
+        <item>Breakfast Available</item>
+        <item>Air Conditioning</item>
+        <item>Non-Smoking Hotel</item>
+        <item>Restaurant</item>
+        <item>Room Service</item>
+        <item>Suites</item>
+    </string-array>
+    <string name="hotel_kimption_overview">
+                Smackdab in the center of downtown Chicago on the River,
+                Kimpton Hotel Monaco Chicago combines a desirable Loop location
+                with a fun design, warm hospitality, and Kimpton touches like
+                complimentary nightly wine hour. \n\nFrom your guestroom or suite,
+                take in the city lights and river views from your window seat
+                (tip: the perfect backdrop for photos), then head downstairs to
+                our new Belgian bistro-inspired mussel &amp; beer bar, Fisk &amp; Co,
+                featuring a mouthwatering menu of mussels, oysters, steak fries,
+                and burgers.
+    </string>
+    <string name="hotel_kimption_provider">Kimpton Hotel Monaco Chicago</string>
+    <string name="hotel_kimption_price">320</string>
+
 
     <!-- Must-See -->
     <string name="mustsee_wrigley_title">Wrigley Field</string>
     <string name="mustsee_wrigley_location">Addison St</string>
     <string name="mustsee_wrigley_review">5</string>
+    <string-array name="mustsee_wrigley_highlights">
+        <item>Seating bowl</item>
+        <item>Press box</item>
+        <item>Budweiser Bleachers</item>
+        <item>Visitors' clubhouse</item>
+        <item>Cubs</item>
+        <item>Dugout</item>
+        <item>Field</item>
+    </string-array>
+    <string name="mustsee_wrigley_overview">
+                Get a behind-the-scenes look at the legendary home of the Chicago
+                Cubs with Wrigley Field Tours. Built in 1914, this must-see Chicago
+                attraction houses more than 100 years of history.
+    </string>
+    <string name="mustsee_wrigley_provider">Arenas &amp; Stadiums</string>
+    <string name="mustsee_wrigley_price">24</string>
+
 
     <string name="mustsee_mcdonald_title">McDonald\'s #1 Store Museum</string>
     <string name="mustsee_mcdonald_location">Des Plains</string>
     <string name="mustsee_mcdonald_review">4</string>
+    <string-array name="mustsee_mcdonald_highlights">
+        <item>Specialty Museums</item>
+        <item>Museums</item>
+    </string-array>
+    <string name="mustsee_mcdonald_overview">
+                McDonald\'s #1 Store Museum is a recreation of the first McDonald\'s
+                Restaurant opened in Des Plaines, Illinois by McDonald\'s Corporation
+                founder, Ray Kroc, on April 15, 1955.
+    </string>
+    <string name="mustsee_mcdonald_provider">McDonald\'s</string>
+    <string name="mustsee_mcdonald_price">0</string>
+
 
     <string name="mustsee_uc_title">University of Chicago</string>
     <string name="mustsee_uc_location">Ellis Ave</string>
     <string name="mustsee_uc_review">5</string>
+    <string-array name="mustsee_uc_highlights">
+        <item>Educational sites</item>
+        <item>Universities &amp; Schools</item>
+        <item>Sights &amp; Landmarks</item>
+    </string-array>
+    <string name="mustsee_uc_overview">
+                Welcome to the University of Chicago! Founded in 1890 through a gift
+                from John D. Rockefeller, the University of Chicago is an intellectual
+                destination and one of the world\'s premier academic institutions
+                for inquiry, education, and discovery.
+    </string>
+    <string name="mustsee_uc_provider">University of Chicago</string>
+    <string name="mustsee_uc_price">0</string>
+
 
     <string name="mustsee_loop_title">Chicago Loop Walking Tour</string>
     <string name="mustsee_loop_location">The Loop</string>
     <string name="mustsee_loop_review">3</string>
+    <string-array name="mustsee_loop_highlights">
+        <item>Get to know the Loop, Chicago\’s lively downtown area</item>
+        <item>Experience the beauty of this urban metropolis on foot</item>
+        <item>Local guide shares insider knowledge of the city</item>
+    </string-array>
+    <string name="mustsee_loop_overview">
+                Step into the heart of Chicago with this 2-hour walking tour
+                of the Loop. You\’ll meet your local guide at the Chicago
+                Cultural Center and make your way through the city\’s downtown.
+                \n\nStop to check out the elevated “L” train, buildings by Burnham
+                and Sullivan, busy commercial centers and lesser-known quiet
+                corners of this vibrant area. You\’ll come away with a deeper
+                sense of Chicago\’s rich history and architecture.
+    </string>
+    <string name="mustsee_loop_provider">Wild Onion Walks Chicago</string>
+    <string name="mustsee_loop_price">30</string>
+
 
     <string name="mustsee_united_title">United Center</string>
     <string name="mustsee_united_location">W Madison St</string>
     <string name="mustsee_united_review">4</string>
+    <string-array name="mustsee_united_highlights">
+        <item>Arenas &amp; Stadiums</item>
+        <item>Sights &amp; Landmarks</item>
+    </string-array>
+    <string name="mustsee_united_overview">
+                This modern arena replaced the old Chicago Stadium as home
+                court for the NBA\'s Bulls and the NHL\'s Blackhawks.
+    </string>
+    <string name="mustsee_united_provider">United Center</string>
+    <string name="mustsee_united_price">15</string>
+
 
     <string name="mustsee_robie_title">Robie House</string>
     <string name="mustsee_robie_location">Woodlawn Ave</string>
     <string name="mustsee_robie_review">4</string>
+    <string-array name="mustsee_robie_highlights">
+        <item>Architectural Buildings</item>
+        <item>Historic Sites</item>
+        <item>Sights &amp; Landmarks</item>
+    </string-array>
+    <string name="mustsee_robit_overview">
+                The Robie House on the University of Chicago campus is considered
+                one of the most important buildings in the history of American
+                architecture. \n\nIt was created by Frank Lloyd Wright for his client
+                Frederick C. Robie, a forward-thinking businessman.
+    </string>
+    <string name="mustsee_robit_provider">Robie House</string>
+    <string name="mustsee_robit_price">18</string>
 
 </resources>

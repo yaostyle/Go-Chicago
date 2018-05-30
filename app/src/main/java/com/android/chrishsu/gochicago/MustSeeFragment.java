@@ -87,7 +87,8 @@ public class MustSeeFragment extends Fragment {
                 Intent itemDetailIntent = new Intent(getContext(), ItemDetail.class);
 
                 //Add an extra var; ITEM_TITEL so we can reference in the ItemDetail activity
-                itemDetailIntent.putExtra("ITEM_TITLE", currentItem.getTitle());
+                itemDetailIntent.putExtra(getString(R.string.intent_extra_item_title),
+                        currentItem.getTitle());
 
                 //Start the intent
                 startActivity(itemDetailIntent);
