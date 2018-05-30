@@ -49,7 +49,7 @@ public class ItemDetail extends AppCompatActivity {
         String[] highlights = mItems.get(index).getHighlights();
         String highlights_text = "";
 
-        for (int i=0; i < highlights.length; i++) {
+        for (int i = 0; i < highlights.length; i++) {
             highlights_text += "* " + highlights[i] + "\n\n";
         }
         itemHighlight.setText(highlights_text);
@@ -77,7 +77,7 @@ public class ItemDetail extends AppCompatActivity {
                     return i;
                 }
             }
-        } catch(Error error) {
+        } catch (Error error) {
             //skip error checking
         }
         return -1;
@@ -89,10 +89,10 @@ public class ItemDetail extends AppCompatActivity {
                 R.drawable.sights_chicago_architecture_tour,
                 "Michigan Ave",
                 5,
-                new String[] {"See all of Chicago's architectural masterpieces in a single tour",
-                                "Choose from multiple departure times to fit your busy schedule",
-                                "Learn about the city's architectural history through an expert's live narration",
-                                "Prebook this must-do Chicago activity, which frequently sells out"},
+                new String[]{"See all of Chicago's architectural masterpieces in a single tour",
+                        "Choose from multiple departure times to fit your busy schedule",
+                        "Learn about the city's architectural history through an expert's live narration",
+                        "Prebook this must-do Chicago activity, which frequently sells out"},
                 "Get views of Chicago’s most famous buildings, " +
                         "as well as insider info from an expert guide, " +
                         "on this architecture-focused cruise. " +
@@ -108,10 +108,10 @@ public class ItemDetail extends AppCompatActivity {
                 R.drawable.sights_millennium_park,
                 "Michigan Ave",
                 5,
-                new String[] {"Guided Chicago city tour includes areas that many other tours skip",
-                                "Travel with a small group, which ensures personalized attention",
-                                "Air-conditioned minibus can travel where larger coaches can't navigate",
-                                "Upgrade to include a popular Chicago River architecture boat cruise"},
+                new String[]{"Guided Chicago city tour includes areas that many other tours skip",
+                        "Travel with a small group, which ensures personalized attention",
+                        "Air-conditioned minibus can travel where larger coaches can't navigate",
+                        "Upgrade to include a popular Chicago River architecture boat cruise"},
                 "Check many Chicago's landmarks off your must-see " +
                         "list with this small-group sightseeing tour aboard " +
                         "a minibus. Cover more ground than on foot, and hit " +
@@ -127,10 +127,10 @@ public class ItemDetail extends AppCompatActivity {
                 R.drawable.sights_navy_pier,
                 "E Grand Ave",
                 5,
-                new String[] {"Exceptional service to our guests and partners",
-                                "An authentic Chicago experience",
-                                "An architecturally stunning environment offering access " +
-                                        "to extraordinary vistas of the lake, land and skyline"},
+                new String[]{"Exceptional service to our guests and partners",
+                        "An authentic Chicago experience",
+                        "An architecturally stunning environment offering access " +
+                                "to extraordinary vistas of the lake, land and skyline"},
                 "Originally completed in 1916 as part of Daniel Burnham's plan for " +
                         "Chicago, Navy Pier is an iconic city landmark inspiring discovery and " +
                         "wonder. \n\nSince its reopening in 1995, more than 180 million visitors " +
@@ -145,7 +145,7 @@ public class ItemDetail extends AppCompatActivity {
                 R.drawable.sights_skydeck,
                 "Wacker Drive",
                 5,
-                new String[] {"Enjoy views of Chicago from the 103rd floor of Willis Tower",
+                new String[]{"Enjoy views of Chicago from the 103rd floor of Willis Tower",
                         "Experience the thrill of the Ledge, a glass balcony 1,353 feet " +
                                 "(412.4 meters) off the ground",
                         "Learn about the history of the Skydeck in the Skydeck Theatre",
@@ -167,7 +167,7 @@ public class ItemDetail extends AppCompatActivity {
                 R.drawable.sights_riverwalk,
                 "Michigan Ave",
                 5,
-                new String[] {"Enjoy a historical walking tour of downtown Chicago",
+                new String[]{"Enjoy a historical walking tour of downtown Chicago",
                         "Compare the city’s past with its present",
                         "Learn about the history of the Skydeck in the Skydeck Theatre",
                         "See some of the city’s most popular attractions and landmark locations",
@@ -188,7 +188,7 @@ public class ItemDetail extends AppCompatActivity {
                 R.drawable.sights_art_institute,
                 "Grant Park",
                 4,
-                new String[] {"Fast Pass Admission to the Art Institute of Chicago, located " +
+                new String[]{"Fast Pass Admission to the Art Institute of Chicago, located " +
                         "in Grant Park. Bypass General Admission lines and gain expedited " +
                         "access to collection galleries and special exhibitions",
                         "Browse an extraordinary collection of Impressionist and modern art",
@@ -211,8 +211,8 @@ public class ItemDetail extends AppCompatActivity {
                 R.drawable.food_lou_malnati_pizza,
                 "State St",
                 5,
-                new String[] {"Italian", "Pizza", "Vegetarian Friendly",
-                                "Vegan Options", "Gluten Free Options"},
+                new String[]{"Italian", "Pizza", "Vegetarian Friendly",
+                        "Vegan Options", "Gluten Free Options"},
                 "Lou Malnati’s opened the doors to its 33rd pizzeria on Monday, " +
                         "July 4, 2011. Located at 1120 N. State Street in the city’s " +
                         "Gold Coast neighborhood, this pizzeria is the company’s new " +
@@ -227,7 +227,7 @@ public class ItemDetail extends AppCompatActivity {
                 R.drawable.food_girl_and_the_goat,
                 "Randolph St",
                 5,
-                new String[] {"American", "Vegetarian Friendly",
+                new String[]{"American", "Vegetarian Friendly",
                         "Gluten Free Options", "Vegan Options"},
                 "Girl & the Goat has been serving fun foods, craft beers, " +
                         "and making wine in a rustic and kick-butt environment since " +
@@ -247,7 +247,7 @@ public class ItemDetail extends AppCompatActivity {
                 R.drawable.food_portillos,
                 "Ontario St",
                 4,
-                new String[] {"American", "Fast Food", "Soups", "Vegetarian Friendly"},
+                new String[]{"American", "Fast Food", "Soups", "Vegetarian Friendly"},
                 "Home to America's favorite Chicago-style hot dogs, Italian " +
                         "beef, burgers, salads, and chocolate cake. \n\nThe first " +
                         "Portillo's hot dog stand known as \"The Dog House\" opens " +
@@ -263,15 +263,15 @@ public class ItemDetail extends AppCompatActivity {
                 R.drawable.food_wildberry,
                 "Randolph St",
                 5,
-                new String[] {"American", "Cafe", "Vegetarian Friendly",
+                new String[]{"American", "Cafe", "Vegetarian Friendly",
                         "Vegan Options", "Gluten Free Options"},
-                            "Get your day off to a great start” at this " +
-                                    "“slightly upscale” " +
-                                    "breakfast- and lunch-only pancake chain, where an " +
-                                    "“amazingly big” American menu offers “more flair” " +
-                                    "than expected plus “huge”, “reasonably priced” " +
-                                    "portions; it's “mobbed” on weekends, so “be prepared " +
-                                    "to wait.",
+                "Get your day off to a great start” at this " +
+                        "“slightly upscale” " +
+                        "breakfast- and lunch-only pancake chain, where an " +
+                        "“amazingly big” American menu offers “more flair” " +
+                        "than expected plus “huge”, “reasonably priced” " +
+                        "portions; it's “mobbed” on weekends, so “be prepared " +
+                        "to wait.",
                 "Wildberry ",
                 (float) 15));
 
@@ -279,7 +279,7 @@ public class ItemDetail extends AppCompatActivity {
                 R.drawable.food_smoqu_bbq,
                 "Randolph St",
                 5,
-                new String[] {"American", "Barbecue", "Gluten Free Options"},
+                new String[]{"American", "Barbecue", "Gluten Free Options"},
                 "Smoque (smōk) BBQ is a neighborhood kind of place that cooks up " +
                         "BBQ good enough to make it a true destination. It was created by " +
                         "five regular guys who happen to be passionate about food in general " +
@@ -291,7 +291,7 @@ public class ItemDetail extends AppCompatActivity {
                 R.drawable.food_bohemian_house,
                 "Illinois St",
                 5,
-                new String[] {"German", "Polish", "European", "Czech",
+                new String[]{"German", "Polish", "European", "Czech",
                         "Eastern European", "Central European",
                         "Hungarian", "Austrian", "Vegetarian Friendly",
                         "Gluten Free Options"},
@@ -313,16 +313,16 @@ public class ItemDetail extends AppCompatActivity {
                 R.drawable.hotel_the_peninsula,
                 "N Michigan Ave",
                 5,
-                new String[] {"Free Wifi", "Breakfast Available",
+                new String[]{"Free Wifi", "Breakfast Available",
                         "Air Conditioning", "Pool",
                         "Non-Smoking Hotel"},
-                        "Located at Water Tower Park on the \"Manificent Mile,\" the " +
+                "Located at Water Tower Park on the \"Manificent Mile,\" the " +
                         "city’s premier shopping district, The Peninsula Chicago is the " +
-                                "city's most luxurious and sophisticated hotel, offering " +
-                                "guests all possible amenities and services. The Peninsula " +
-                                "Chicago is a proud recipient of the Five-Star, Five-Diamond " +
-                                "Award, and was also recently awarded \"#1 Large City Hotel In " +
-                                "US And Canada\" by readers of Travel + Leisure.",
+                        "city's most luxurious and sophisticated hotel, offering " +
+                        "guests all possible amenities and services. The Peninsula " +
+                        "Chicago is a proud recipient of the Five-Star, Five-Diamond " +
+                        "Award, and was also recently awarded \"#1 Large City Hotel In " +
+                        "US And Canada\" by readers of Travel + Leisure.",
                 "The Peninsula Chicago",
                 (float) 525));
 
@@ -330,7 +330,7 @@ public class ItemDetail extends AppCompatActivity {
                 R.drawable.hotel_the_langham,
                 "Wabash Ave",
                 5,
-                new String[] {"Free Wifi", "Parking", "Breakfast Available",
+                new String[]{"Free Wifi", "Parking", "Breakfast Available",
                         "Air Conditioning", "Pool",
                         "Non-Smoking Hotel", "Restaurant"},
                 "Legendary service and timeless British style in an iconic Chicago " +
@@ -347,7 +347,7 @@ public class ItemDetail extends AppCompatActivity {
                 R.drawable.hotel_ace_chicago,
                 "Morgan St",
                 4,
-                new String[] {"Free Wifi", "Breakfast Available",
+                new String[]{"Free Wifi", "Breakfast Available",
                         "Air Conditioning", "Non-Smoking Hotel",
                         "Restaurant", "Room Service", "Suites"},
                 "Ace Hotel Chicago lives in a stoic, industrial concrete " +
@@ -365,7 +365,7 @@ public class ItemDetail extends AppCompatActivity {
                 R.drawable.hotel_the_guesthouse,
                 "Clark St",
                 5,
-                new String[] {"Free Wifi", "Air Conditioning",
+                new String[]{"Free Wifi", "Air Conditioning",
                         "Non-Smoking Hotel", "Room Service", "Suites",
                         "Fitness Center", "Kitchenette"},
                 "The Guesthouse Hotel was originally built in 2008 as " +
@@ -382,8 +382,8 @@ public class ItemDetail extends AppCompatActivity {
                 R.drawable.hotel_emc2,
                 "Ontario St",
                 4,
-                new String[] {"Wifi", "Parking", "Breakfast Buffet",
-                        "Air Conditioning","Non-Smoking Hotel",
+                new String[]{"Wifi", "Parking", "Breakfast Buffet",
+                        "Air Conditioning", "Non-Smoking Hotel",
                         "Restaurant", "Room Service"},
                 "Immerse yourself in downtown Chicago's creative culture at " +
                         "Hotel EMC2, Autograph Collection. Located in Streeterville, " +
@@ -397,8 +397,8 @@ public class ItemDetail extends AppCompatActivity {
                 R.drawable.hotel_kimpton,
                 "Wabash Ave",
                 3,
-                new String[] {"Free Internet", "Breakfast Available",
-                        "Air Conditioning","Non-Smoking Hotel",
+                new String[]{"Free Internet", "Breakfast Available",
+                        "Air Conditioning", "Non-Smoking Hotel",
                         "Restaurant", "Room Service", "Suites"},
                 "Smackdab in the center of downtown Chicago on the River, " +
                         "Kimpton Hotel Monaco Chicago combines a desirable Loop location " +
@@ -412,6 +412,81 @@ public class ItemDetail extends AppCompatActivity {
                 "Kimpton Hotel Monaco Chicago",
                 (float) 320));
 
+        items.add(new Item("Wrigley Field",
+                R.drawable.mustsee_wrigley_field,
+                "Addison St",
+                5,
+                new String[]{"Seating bowl", "Press box",
+                        "Budweiser Bleachers", "Visitors' clubhouse",
+                        "Cubs' dugout", "Field"},
+                "Get a behind-the-scenes look at the legendary home of the Chicago " +
+                        "Cubs with Wrigley Field Tours. Built in 1914, this must-see Chicago " +
+                        "attraction houses more than 100 years of history.",
+                "Arenas & Stadiums",
+                (float) 24));
+
+        items.add(new Item("McDonald's #1 Store Museum",
+                R.drawable.mustsee_mcdonald_no1_store,
+                "Des Plains",
+                4,
+                new String[]{"Specialty Museums", "Museums"},
+                "McDonald's #1 Store Museum is a recreation of the first McDonald's " +
+                        "Restaurant opened in Des Plaines, Illinois by McDonald's Corporation " +
+                        "founder, Ray Kroc, on April 15, 1955.",
+                "McDonald's",
+                (float) 0));
+
+        items.add(new Item("University of Chicago",
+                R.drawable.mustsee_university_of_chicago,
+                "Ellis Ave",
+                5,
+                new String[]{"Educational sites", "Universities & Schools", "Sights & Landmarks"},
+                "Welcome to the University of Chicago! Founded in 1890 through a gift " +
+                        "from John D. Rockefeller, the University of Chicago is an intellectual " +
+                        "destination and one of the world's premier academic institutions " +
+                        "for inquiry, education, and discovery. ",
+                "University of Chicago",
+                (float) 0));
+
+        items.add(new Item("Chicago Loop Walking Tour",
+                R.drawable.mustsee_the_loop,
+                "The Loop",
+                3,
+                new String[]{"Get to know the Loop, Chicago’s lively downtown area",
+                        "Experience the beauty of this urban metropolis on foot",
+                        "Local guide shares insider knowledge of the city"},
+                "Step into the heart of Chicago with this 2-hour walking tour " +
+                        "of the Loop. You’ll meet your local guide at the Chicago " +
+                        "Cultural Center and make your way through the city’s downtown. " +
+                        "\n\nStop to check out the elevated “L” train, buildings by Burnham " +
+                        "and Sullivan, busy commercial centers and lesser-known quiet " +
+                        "corners of this vibrant area. You’ll come away with a deeper " +
+                        "sense of Chicago’s rich history and architecture.",
+                "Wild Onion Walks Chicago",
+                (float) 30));
+
+        items.add(new Item("United Center",
+                R.drawable.mustsee_united_center,
+                "W Madison St",
+                4,
+                new String[]{"Arenas & Stadiums", "Sights & Landmarks"},
+                "This modern arena replaced the old Chicago Stadium as home " +
+                        "court for the NBA's Bulls and the NHL's Blackhawks.",
+                "United Center",
+                (float) 15));
+
+        items.add(new Item("Robie House",
+                R.drawable.mustsee_robie_house,
+                "Woodlawn Ave",
+                4,
+                new String[]{"Architectural Buildings", "Historic Sites",
+                        "Sights & Landmarks"},
+                "The Robie House on the University of Chicago campus is considered " +
+                        "one of the most important buildings in the history of American " +
+                        "architecture. \n\nIt was created by Frank Lloyd Wright for his client " +
+                        "Frederick C. Robie, a forward-thinking businessman. ",
+                "Robie House",
+                (float) 18));
 
     }
 }
