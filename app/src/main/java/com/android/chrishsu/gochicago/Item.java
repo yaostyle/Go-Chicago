@@ -3,74 +3,74 @@ package com.android.chrishsu.gochicago;
 //Create Item class
 public class Item {
     //Init private vars
-    private String mTitle;
-    private int mImageResourceId;
-    private String mLocation;
-    private int mReviewStar;
+    private String itemTitle;
+    private int itemImageResourceId;
+    private String itemLocation;
+    private int itemReviewStar;
 
-    private String[] mHighlights;
-    private String mOverview;
-    private String mProvider;
-    private float mPrice;
+    private String[] itemHighlights;
+    private String itemOverview;
+    private String itemProvider;
+    private float itemPrice;
 
     //Item constructor takes 4 params
     public Item(String title, int imageResourceId, String location, int reviewStart) {
-        mTitle = title;
-        mImageResourceId = imageResourceId;
-        mLocation = location;
-        mReviewStar = reviewStart;
+        itemTitle = title;
+        itemImageResourceId = imageResourceId;
+        itemLocation = location;
+        itemReviewStar = reviewStart;
     }
 
     //Item constructor takes 8 params
     public Item(String title, int imageResourceId, String location, int reviewStar, String[] highlights, String overview, String provider, float price) {
-        mTitle = title;
-        mImageResourceId = imageResourceId;
-        mLocation = location;
-        mReviewStar = reviewStar;
-        mHighlights = highlights;
-        mOverview = overview;
-        mProvider = provider;
-        mPrice = price;
+        itemTitle = title;
+        itemImageResourceId = imageResourceId;
+        itemLocation = location;
+        itemReviewStar = reviewStar;
+        itemHighlights = highlights;
+        itemOverview = overview;
+        itemProvider = provider;
+        itemPrice = price;
     }
 
     //Getter for Hightlights
     public String[] getHighlights() {
-        return mHighlights;
+        return itemHighlights;
     }
 
     //Getter for Overview
     public String getOverview() {
-        return mOverview;
+        return itemOverview;
     }
 
     //Getter for Provider
     public String getProvider() {
-        return mProvider;
+        return itemProvider;
     }
 
     //Getter for Price
     public float getPrice() {
-        return mPrice;
+        return itemPrice;
     }
 
     //Getter for Title
     public String getTitle() {
-        return mTitle;
+        return itemTitle;
     }
 
     //Getter for ImageResource
     public int getImageResourceId() {
-        return mImageResourceId;
+        return itemImageResourceId;
     }
 
     //Getter for Location
     public String getLocation() {
-        return mLocation;
+        return itemLocation;
     }
 
     //Getter for ReviewStars
     public int getReviewStar() {
-        return mReviewStar;
+        return itemReviewStar;
     }
 
 }

@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -38,36 +37,41 @@ public class TourFragment extends Fragment {
         final ArrayList<Item> items = new ArrayList<Item>();
 
         //Add list data
-        items.add(new Item("Chicago Architecture River Cruise",
+        items.add(new Item(getString(R.string.tour_chicago_architecture_title),
                 R.drawable.sights_chicago_architecture_tour,
-                "Michigan Ave",
-                5));
-        items.add(new Item("Millennium Park",
+                getString(R.string.tour_chicago_architecture_location),
+                Integer.parseInt(getString(R.string.tour_chicago_architecture_review))));
+
+        items.add(new Item(getString(R.string.tour_millennium_park_title),
                 R.drawable.sights_millennium_park,
-                "Michigan Ave",
-                5));
-        items.add(new Item("Navy Pier",
+                getString(R.string.tour_millennium_park_location),
+                Integer.parseInt(getString(R.string.tour_millennium_park_review))));
+
+        items.add(new Item(getString(R.string.tour_navy_pier_title),
                 R.drawable.sights_navy_pier,
-                "E Grand Ave",
-                5));
-        items.add(new Item("Skydeck Chicago Admission",
+                getString(R.string.tour_navy_pier_location),
+                Integer.parseInt(getString(R.string.tour_navy_pier_review))));
+
+        items.add(new Item(getString(R.string.tour_skydeck_title),
                 R.drawable.sights_skydeck,
-                "Wacker Drive",
-                4));
-        items.add(new Item("History and Riverwalk Tour",
+                getString(R.string.tour_skydeck_location),
+                Integer.parseInt(getString(R.string.tour_skydeck_review))));
+
+        items.add(new Item(getString(R.string.tour_riverwalk_title),
                 R.drawable.sights_riverwalk,
-                "Michigan Ave",
-                5));
-        items.add(new Item("The Art Institute of Chicago",
+                getString(R.string.tour_riverwalk_location),
+                Integer.parseInt(getString(R.string.tour_riverwalk_review))));
+
+        items.add(new Item(getString(R.string.tour_art_institute_title),
                 R.drawable.sights_art_institute,
-                "Grant Park",
-                4));
+                getString(R.string.tour_art_institute_location),
+                Integer.parseInt(getString(R.string.tour_art_institute_review))));
 
         //Create an ItemAdapter
         final ItemAdapter adapter = new ItemAdapter(getActivity(), items);
 
         //Get list view
-        ListView listView = (ListView) rootView.findViewById(R.id.list);
+        ListView listView = rootView.findViewById(R.id.list);
 
         //Bind with adapter
         listView.setAdapter(adapter);

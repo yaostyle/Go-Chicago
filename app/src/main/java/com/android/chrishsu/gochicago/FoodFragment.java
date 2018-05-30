@@ -5,9 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -40,40 +38,41 @@ public class FoodFragment extends Fragment {
         final ArrayList<Item> items = new ArrayList<Item>();
 
         //Add list data
-        items.add(new Item("Lou Malnati's Pizzeria",
+        items.add(new Item(getString(R.string.food_lou_malanti_title),
                 R.drawable.food_lou_malnati_pizza,
-                "State St",
-                5));
-        items.add(new Item("Girl & The Goat",
+                getString(R.string.food_lou_malanti_location),
+                Integer.parseInt(getString(R.string.food_lou_malanti_review))));
+
+        items.add(new Item(getString(R.string.food_girl_the_goat_title),
                 R.drawable.food_girl_and_the_goat,
-                "Randolph St",
-                5));
+                getString(R.string.food_girl_the_goat_location),
+                Integer.parseInt(getString(R.string.food_girl_the_goat_review))));
 
-        items.add(new Item("Portillo's",
+        items.add(new Item(getString(R.string.food_portillo_title),
                 R.drawable.food_portillos,
-                "Ontario St",
-                4));
+                getString(R.string.food_portillo_location),
+                Integer.parseInt(getString(R.string.food_portillo_review))));
 
-        items.add(new Item("Wildberry Pancakes and Cafe",
+        items.add(new Item(getString(R.string.food_wildberry_title),
                 R.drawable.food_wildberry,
-                "Randolph St",
-                5));
+                getString(R.string.food_wildberry_location),
+                Integer.parseInt(getString(R.string.food_wildberry_review))));
 
-        items.add(new Item("Smoque BBQ",
+        items.add(new Item(getString(R.string.food_smoque_title),
                 R.drawable.food_smoqu_bbq,
-                "Pulaski Rd",
-                5));
+                getString(R.string.food_smoque_location),
+                Integer.parseInt(getString(R.string.food_smoque_review))));
 
-        items.add(new Item("Bohemian House",
+        items.add(new Item(getString(R.string.food_bohemian_title),
                 R.drawable.food_bohemian_house,
-                "Illinois St",
-                5));
+                getString(R.string.food_bohemian_location),
+                Integer.parseInt(getString(R.string.food_bohemian_review))));
 
         //Create an ItemAdapter
         final ItemAdapter adapter = new ItemAdapter(getActivity(), items);
 
         //Get list view
-        ListView listView = (ListView) rootView.findViewById(R.id.list);
+        ListView listView = rootView.findViewById(R.id.list);
 
         //Bind with adapter
         listView.setAdapter(adapter);

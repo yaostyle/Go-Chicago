@@ -1,4 +1,5 @@
 <resources>
+    <!-- UI strings -->
     <string name="app_name">Go Chicago!</string>
     <string name="category_name_tour">City Tour</string>
     <string name="category_name_food">Food</string>
@@ -8,4 +9,107 @@
     <string name="item_provider_txt">By: %1$s</string>
     <string name="item_hightlight_txt">Hightlight</string>
     <string name="item_overview_txt">Overview</string>
+
+    <!-- Item data strings -->
+    
+    <!-- Tours -->
+    <string name="tour_chicago_architecture_title">Chicago Architecture River Cruise</string>
+    <string name="tour_chicago_architecture_location">Michigan Ave</string>
+    <string name="tour_chicago_architecture_review">5</string>
+
+    <string name="tour_millennium_park_title">Millennium Park</string>
+    <string name="tour_millennium_park_location">Michigan Ave</string>
+    <string name="tour_millennium_park_review">5</string>
+
+    <string name="tour_navy_pier_title">Navy Pier</string>
+    <string name="tour_navy_pier_location">E Grand Ave</string>
+    <string name="tour_navy_pier_review">5</string>
+
+    <string name="tour_skydeck_title">Skydeck Chicago Admission</string>
+    <string name="tour_skydeck_location">Wacker Dr</string>
+    <string name="tour_skydeck_review">4</string>
+
+    <string name="tour_riverwalk_title">History and Riverwalk Tour</string>
+    <string name="tour_riverwalk_location">Michigan Ave</string>
+    <string name="tour_riverwalk_review">5</string>
+
+    <string name="tour_art_institute_title">The Art Institute of Chicago</string>
+    <string name="tour_art_institute_location">Grant Park</string>
+    <string name="tour_art_institute_review">4</string>
+    
+    <!-- Food -->
+    <string name="food_lou_malanti_title">Lou Malnati\'s Pizzeria</string>
+    <string name="food_lou_malanti_location">State St</string>
+    <string name="food_lou_malanti_review">5</string>
+    
+    <string name="food_girl_the_goat_title">Girl &amp; The Goat</string>
+    <string name="food_girl_the_goat_location">Randolph St</string>
+    <string name="food_girl_the_goat_review">5</string>
+    
+    <string name="food_portillo_title">Portillo\'s</string>
+    <string name="food_portillo_location">Ontario St</string>
+    <string name="food_portillo_review">4</string>
+    
+    <string name="food_wildberry_title">Wildberry Pancakes and Cafe</string>
+    <string name="food_wildberry_location">Randolph St</string>
+    <string name="food_wildberry_review">5</string>
+    
+    <string name="food_smoque_title">Smoque BBQ</string>
+    <string name="food_smoque_location">Pulaski Rd</string>
+    <string name="food_smoque_review">5</string>
+    
+    <string name="food_bohemian_title">Bohemian House</string>
+    <string name="food_bohemian_location">Illinois St</string>
+    <string name="food_bohemian_review">5</string>
+    
+    <!-- Hotel -->
+    <string name="hotel_peninsula_title">The Peninsula Chicago</string>
+    <string name="hotel_peninsula_location">N Michigan Ave</string>
+    <string name="hotel_peninsula_review">5</string>
+    
+    <string name="hotel_langham_title">The Langham, Chicago</string>
+    <string name="hotel_langham_location">Wabash Ave</string>
+    <string name="hotel_langham_review">5</string>
+    
+    <string name="hotel_ace_title">Ace Hotel Chicago</string>
+    <string name="hotel_ace_location">Morgan St</string>
+    <string name="hotel_ace_review">4</string>
+    
+    <string name="hotel_guesthouse_title">The Guesthouse Hotel</string>
+    <string name="hotel_guesthouse_location">Clark St</string>
+    <string name="hotel_guesthouse_review">5</string>
+
+    <string name="hotel_emc2_title">Hotel EMC2, Autograph Collection</string>
+    <string name="hotel_emc2_location">Ontario St</string>
+    <string name="hotel_emc2_review">4</string>
+
+    <string name="hotel_kimption_title">Kimpton Hotel Monaco Chicago</string>
+    <string name="hotel_kimption_location">Wabash Ave</string>
+    <string name="hotel_kimption_review">3</string>
+
+    <!-- Must-See -->
+    <string name="mustsee_wrigley_title">Wrigley Field</string>
+    <string name="mustsee_wrigley_location">Addison St</string>
+    <string name="mustsee_wrigley_review">5</string>
+
+    <string name="mustsee_mcdonald_title">McDonald\'s #1 Store Museum</string>
+    <string name="mustsee_mcdonald_location">Des Plains</string>
+    <string name="mustsee_mcdonald_review">4</string>
+
+    <string name="mustsee_uc_title">University of Chicago</string>
+    <string name="mustsee_uc_location">Ellis Ave</string>
+    <string name="mustsee_uc_review">5</string>
+
+    <string name="mustsee_loop_title">Chicago Loop Walking Tour</string>
+    <string name="mustsee_loop_location">The Loop</string>
+    <string name="mustsee_loop_review">3</string>
+
+    <string name="mustsee_united_title">United Center</string>
+    <string name="mustsee_united_location">W Madison St</string>
+    <string name="mustsee_united_review">4</string>
+
+    <string name="mustsee_robie_title">Robie House</string>
+    <string name="mustsee_robie_location">Woodlawn Ave</string>
+    <string name="mustsee_robie_review">4</string>
+
 </resources>

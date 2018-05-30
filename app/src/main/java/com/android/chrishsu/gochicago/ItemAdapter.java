@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -26,7 +25,7 @@ public class ItemAdapter extends ArrayAdapter<Item> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
-        //Get the currect view
+        //Get the current view
         View listItemView = convertView;
 
         //If listItemView is null, inflate it from list_item
@@ -46,7 +45,7 @@ public class ItemAdapter extends ArrayAdapter<Item> {
         locationTextView.setText(currentItem.getLocation());
 
         //Get the image ImageView and set its image resource ID
-        ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
+        ImageView imageView = listItemView.findViewById(R.id.image);
         imageView.setImageResource(currentItem.getImageResourceId());
 
         //Call function showReviewStar and pass number of ReviewStart
@@ -59,11 +58,11 @@ public class ItemAdapter extends ArrayAdapter<Item> {
     //Function to display numbers of review star
     private void showReviewStar(View listview, int star) {
         //Init all ImageView vars
-        ImageView imageViewStart1 = (ImageView) listview.findViewById(R.id.review_star1);
-        ImageView imageViewStart2 = (ImageView) listview.findViewById(R.id.review_star2);
-        ImageView imageViewStart3 = (ImageView) listview.findViewById(R.id.review_star3);
-        ImageView imageViewStart4 = (ImageView) listview.findViewById(R.id.review_star4);
-        ImageView imageViewStart5 = (ImageView) listview.findViewById(R.id.review_star5);
+        ImageView imageViewStart1 = listview.findViewById(R.id.review_star1);
+        ImageView imageViewStart2 = listview.findViewById(R.id.review_star2);
+        ImageView imageViewStart3 = listview.findViewById(R.id.review_star3);
+        ImageView imageViewStart4 = listview.findViewById(R.id.review_star4);
+        ImageView imageViewStart5 = listview.findViewById(R.id.review_star5);
 
         //Set switch statement, and assign number of filled stars
         switch (star) {

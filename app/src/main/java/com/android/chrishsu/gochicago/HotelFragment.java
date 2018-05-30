@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,41 +37,41 @@ public class HotelFragment extends Fragment {
         final ArrayList<Item> items = new ArrayList<Item>();
 
         //Add list data
-        items.add(new Item("The Peninsula Chicago",
+        items.add(new Item(getString(R.string.hotel_peninsula_title),
                 R.drawable.hotel_the_peninsula,
-                "N Michigan Ave",
-                5));
+                getString(R.string.hotel_peninsula_location),
+                Integer.parseInt(getString(R.string.hotel_peninsula_review))));
 
-        items.add(new Item("The Langham, Chicago",
+        items.add(new Item(getString(R.string.hotel_langham_title),
                 R.drawable.hotel_the_langham,
-                "Wabash Ave",
-                5));
+                getString(R.string.hotel_langham_location),
+                Integer.parseInt(getString(R.string.hotel_langham_review))));
 
-        items.add(new Item("Ace Hotel Chicago",
+        items.add(new Item(getString(R.string.hotel_ace_title),
                 R.drawable.hotel_ace_chicago,
-                "Morgan St",
-                4));
+                getString(R.string.hotel_ace_location),
+                Integer.parseInt(getString(R.string.hotel_ace_review))));
 
-        items.add(new Item("The Guesthouse Hotel",
+        items.add(new Item(getString(R.string.hotel_guesthouse_title),
                 R.drawable.hotel_the_guesthouse,
-                "Clark St",
-                5));
+                getString(R.string.hotel_guesthouse_location),
+                Integer.parseInt(getString(R.string.hotel_guesthouse_review))));
 
-        items.add(new Item("Hotel EMC2, Autograph Collection",
+        items.add(new Item(getString(R.string.hotel_emc2_title),
                 R.drawable.hotel_emc2,
-                "Ontario St",
-                4));
+                getString(R.string.hotel_emc2_location),
+                Integer.parseInt(getString(R.string.hotel_emc2_review))));
 
-        items.add(new Item("Kimpton Hotel Monaco Chicago",
+        items.add(new Item(getString(R.string.hotel_kimption_title),
                 R.drawable.hotel_kimpton,
-                "Wabash Ave",
-                3));
+                getString(R.string.hotel_kimption_location),
+                Integer.parseInt(getString(R.string.hotel_kimption_review))));
 
         //Create an ItemAdapter
         final ItemAdapter adapter = new ItemAdapter(getActivity(), items);
 
         //Get list view
-        ListView listView = (ListView) rootView.findViewById(R.id.list);
+        ListView listView = rootView.findViewById(R.id.list);
 
         //Bind with adapter
         listView.setAdapter(adapter);

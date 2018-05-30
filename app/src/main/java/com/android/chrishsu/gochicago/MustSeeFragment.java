@@ -37,35 +37,35 @@ public class MustSeeFragment extends Fragment {
         final ArrayList<Item> items = new ArrayList<Item>();
 
         //Add list data
-        items.add(new Item("Wrigley Field",
+        items.add(new Item(getString(R.string.mustsee_wrigley_title),
                 R.drawable.mustsee_wrigley_field,
-                "Addison St",
-                5));
+                getString(R.string.mustsee_wrigley_location),
+                Integer.parseInt(getString(R.string.mustsee_wrigley_review))));
 
-        items.add(new Item("McDonald's #1 Store Museum",
+        items.add(new Item(getString(R.string.mustsee_mcdonald_title),
                 R.drawable.mustsee_mcdonald_no1_store,
-                "Addison St",
-                4));
+                getString(R.string.mustsee_mcdonald_location),
+                Integer.parseInt(getString(R.string.mustsee_mcdonald_review))));
 
-        items.add(new Item("University of Chicago",
+        items.add(new Item(getString(R.string.mustsee_uc_title),
                 R.drawable.mustsee_university_of_chicago,
-                "Ellis Ave",
-                5));
+                getString(R.string.mustsee_uc_location),
+                Integer.parseInt(getString(R.string.mustsee_uc_review))));
 
-        items.add(new Item("Chicago Loop Walking Tour",
+        items.add(new Item(getString(R.string.mustsee_loop_title),
                 R.drawable.mustsee_the_loop,
-                "The Loop",
-                3));
+                getString(R.string.mustsee_loop_location),
+                Integer.parseInt(getString(R.string.mustsee_loop_review))));
 
-        items.add(new Item("United Center",
+        items.add(new Item(getString(R.string.mustsee_united_title),
                 R.drawable.mustsee_united_center,
-                "W Madison St",
-                4));
+                getString(R.string.mustsee_united_location),
+                Integer.parseInt(getString(R.string.mustsee_united_review))));
 
-        items.add(new Item("Robie House",
+        items.add(new Item(getString(R.string.mustsee_robie_title),
                 R.drawable.mustsee_robie_house,
-                "Woodlawn Ave",
-                4));
+                getString(R.string.mustsee_robie_location),
+                Integer.parseInt(getString(R.string.mustsee_robie_review))));
 
         //Create an ItemAdapter
         final ItemAdapter adapter = new ItemAdapter(getActivity(), items);

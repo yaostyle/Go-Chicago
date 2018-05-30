@@ -1,11 +1,7 @@
 package com.android.chrishsu.gochicago;
 
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -24,16 +20,16 @@ public class ItemDetail extends AppCompatActivity {
         setContentView(R.layout.activity_item_detail);
 
         //First, retrieve string value from Intent
-        String item_title = getIntent().getStringExtra("ITEM_TITLE");
+        String itemTitle = getIntent().getStringExtra("ITEM_TITLE");
 
         //Set its title
-        setTitle(item_title);
+        setTitle(itemTitle);
 
         //Init all the item data
         initItems(mItems);
 
         //Get the current item index
-        int currentItemIndex = getItemIndexByTitle(item_title);
+        int currentItemIndex = getItemIndexByTitle(itemTitle);
 
         //Inflate layout
         inflateLayout(currentItemIndex);
@@ -43,24 +39,24 @@ public class ItemDetail extends AppCompatActivity {
     //Function to inflate layout by position index
     private void inflateLayout(int index) {
         //Get image view and set its resource ID
-        ImageView itemImage = (ImageView) findViewById(R.id.item_image);
+        ImageView itemImage = findViewById(R.id.item_image);
         itemImage.setImageResource(mItems.get(index).getImageResourceId());
 
         //Get title view and set its value
-        TextView itemTitle = (TextView) findViewById(R.id.item_title);
+        TextView itemTitle = findViewById(R.id.item_title);
         itemTitle.setText(mItems.get(index).getTitle());
 
         //Get location view and set its value
-        TextView itemLocation = (TextView) findViewById(R.id.item_location);
+        TextView itemLocation = findViewById(R.id.item_location);
         itemLocation.setText(mItems.get(index).getLocation());
 
         //Get provide view and set its value
-        TextView itemProvider = (TextView) findViewById(R.id.item_provider);
+        TextView itemProvider = findViewById(R.id.item_provider);
         itemProvider.setText(getString(R.string.item_provider_txt,
                 mItems.get(index).getProvider()));
 
         //Get hightlights view
-        TextView itemHighlight = (TextView) findViewById(R.id.item_hightlights);
+        TextView itemHighlight = findViewById(R.id.item_hightlights);
 
         //Create a String array for current item's string list
         String[] highlights = mItems.get(index).getHighlights();
@@ -109,10 +105,10 @@ public class ItemDetail extends AppCompatActivity {
     //Function to init and create item data
     private void initItems(ArrayList<Item> items) {
 
-        items.add(new Item("Chicago Architecture River Cruise",
+        items.add(new Item(getString(R.string.tour_chicago_architecture_title),
                 R.drawable.sights_chicago_architecture_tour,
-                "Michigan Ave",
-                5,
+                getString(R.string.tour_chicago_architecture_location),
+                Integer.parseInt(getString(R.string.tour_chicago_architecture_review)),
                 new String[]{"See all of Chicago's architectural masterpieces in a single tour",
                         "Choose from multiple departure times to fit your busy schedule",
                         "Learn about the city's architectural history through an expert's live narration",
@@ -128,10 +124,10 @@ public class ItemDetail extends AppCompatActivity {
                 "Shoreline Sightseeing",
                 (float) 43.68));
 
-        items.add(new Item("Millennium Park",
+        items.add(new Item(getString(R.string.tour_millennium_park_title),
                 R.drawable.sights_millennium_park,
-                "Michigan Ave",
-                5,
+                getString(R.string.tour_millennium_park_location),
+                Integer.parseInt(getString(R.string.tour_millennium_park_review)),
                 new String[]{"Guided Chicago city tour includes areas that many other tours skip",
                         "Travel with a small group, which ensures personalized attention",
                         "Air-conditioned minibus can travel where larger coaches can't navigate",
@@ -147,10 +143,10 @@ public class ItemDetail extends AppCompatActivity {
                 "See it All Chicago Tours",
                 (float) 35));
 
-        items.add(new Item("Navy Pier",
+        items.add(new Item(getString(R.string.tour_navy_pier_title),
                 R.drawable.sights_navy_pier,
-                "E Grand Ave",
-                5,
+                getString(R.string.tour_navy_pier_location),
+                Integer.parseInt(getString(R.string.tour_navy_pier_review)),
                 new String[]{"Exceptional service to our guests and partners",
                         "An authentic Chicago experience",
                         "An architecturally stunning environment offering access " +
@@ -165,10 +161,10 @@ public class ItemDetail extends AppCompatActivity {
                 "Navy Pier",
                 (float) 25));
 
-        items.add(new Item("Skydeck Chicago Admission",
+        items.add(new Item(getString(R.string.tour_skydeck_title),
                 R.drawable.sights_skydeck,
-                "Wacker Drive",
-                5,
+                getString(R.string.tour_skydeck_location),
+                Integer.parseInt(getString(R.string.tour_skydeck_review)),
                 new String[]{"Enjoy views of Chicago from the 103rd floor of Willis Tower",
                         "Experience the thrill of the Ledge, a glass balcony 1,353 feet " +
                                 "(412.4 meters) off the ground",
@@ -187,10 +183,10 @@ public class ItemDetail extends AppCompatActivity {
                 "Skydeck",
                 (float) 24));
 
-        items.add(new Item("History and Riverwalk Tour",
+        items.add(new Item(getString(R.string.tour_riverwalk_title),
                 R.drawable.sights_riverwalk,
-                "Michigan Ave",
-                5,
+                getString(R.string.tour_riverwalk_location),
+                Integer.parseInt(getString(R.string.tour_riverwalk_review)),
                 new String[]{"Enjoy a historical walking tour of downtown Chicago",
                         "Compare the city’s past with its present",
                         "Learn about the history of the Skydeck in the Skydeck Theatre",
@@ -208,10 +204,10 @@ public class ItemDetail extends AppCompatActivity {
                 "Chicago's Finest Tours",
                 (float) 25));
 
-        items.add(new Item("The Art Institute of Chicago",
+        items.add(new Item(getString(R.string.tour_art_institute_title),
                 R.drawable.sights_art_institute,
-                "Grant Park",
-                4,
+                getString(R.string.tour_art_institute_location),
+                Integer.parseInt(getString(R.string.tour_art_institute_review)),
                 new String[]{"Fast Pass Admission to the Art Institute of Chicago, located " +
                         "in Grant Park. Bypass General Admission lines and gain expedited " +
                         "access to collection galleries and special exhibitions",
@@ -231,10 +227,10 @@ public class ItemDetail extends AppCompatActivity {
                 "The Art Institute",
                 (float) 35));
 
-        items.add(new Item("Lou Malnati's Pizzeria",
+        items.add(new Item(getString(R.string.food_lou_malanti_title),
                 R.drawable.food_lou_malnati_pizza,
-                "State St",
-                5,
+                getString(R.string.food_lou_malanti_location),
+                Integer.parseInt(getString(R.string.food_lou_malanti_review)),
                 new String[]{"Italian", "Pizza", "Vegetarian Friendly",
                         "Vegan Options", "Gluten Free Options"},
                 "Lou Malnati’s opened the doors to its 33rd pizzeria on Monday, " +
@@ -247,10 +243,10 @@ public class ItemDetail extends AppCompatActivity {
                 "Lou Malnati's Pizzeria",
                 (float) 5));
 
-        items.add(new Item("Girl & The Goat",
+        items.add(new Item(getString(R.string.food_girl_the_goat_title),
                 R.drawable.food_girl_and_the_goat,
-                "Randolph St",
-                5,
+                getString(R.string.food_girl_the_goat_location),
+                Integer.parseInt(getString(R.string.food_girl_the_goat_review)),
                 new String[]{"American", "Vegetarian Friendly",
                         "Gluten Free Options", "Vegan Options"},
                 "Girl & the Goat has been serving fun foods, craft beers, " +
@@ -267,10 +263,10 @@ public class ItemDetail extends AppCompatActivity {
                 "Girl & The Goat",
                 (float) 15));
 
-        items.add(new Item("Portillo's",
+        items.add(new Item(getString(R.string.food_portillo_title),
                 R.drawable.food_portillos,
-                "Ontario St",
-                4,
+                getString(R.string.food_portillo_location),
+                Integer.parseInt(getString(R.string.food_portillo_review)),
                 new String[]{"American", "Fast Food", "Soups", "Vegetarian Friendly"},
                 "Home to America's favorite Chicago-style hot dogs, Italian " +
                         "beef, burgers, salads, and chocolate cake. \n\nThe first " +
@@ -283,10 +279,10 @@ public class ItemDetail extends AppCompatActivity {
                 "Portillo's",
                 (float) 10));
 
-        items.add(new Item("Wildberry Pancakes and Cafe",
+        items.add(new Item(getString(R.string.food_wildberry_title),
                 R.drawable.food_wildberry,
-                "Randolph St",
-                5,
+                getString(R.string.food_wildberry_location),
+                Integer.parseInt(getString(R.string.food_wildberry_review)),
                 new String[]{"American", "Cafe", "Vegetarian Friendly",
                         "Vegan Options", "Gluten Free Options"},
                 "Get your day off to a great start” at this " +
@@ -299,10 +295,10 @@ public class ItemDetail extends AppCompatActivity {
                 "Wildberry ",
                 (float) 15));
 
-        items.add(new Item("Smoque BBQ",
+        items.add(new Item(getString(R.string.food_smoque_title),
                 R.drawable.food_smoqu_bbq,
-                "Randolph St",
-                5,
+                getString(R.string.food_smoque_location),
+                Integer.parseInt(getString(R.string.food_smoque_review)),
                 new String[]{"American", "Barbecue", "Gluten Free Options"},
                 "Smoque (smōk) BBQ is a neighborhood kind of place that cooks up " +
                         "BBQ good enough to make it a true destination. It was created by " +
@@ -311,10 +307,10 @@ public class ItemDetail extends AppCompatActivity {
                 "Smoque BBQ ",
                 (float) 20));
 
-        items.add(new Item("Bohemian House",
+        items.add(new Item(getString(R.string.food_bohemian_title),
                 R.drawable.food_bohemian_house,
-                "Illinois St",
-                5,
+                getString(R.string.food_bohemian_location),
+                Integer.parseInt(getString(R.string.food_bohemian_review)),
                 new String[]{"German", "Polish", "European", "Czech",
                         "Eastern European", "Central European",
                         "Hungarian", "Austrian", "Vegetarian Friendly",
@@ -333,10 +329,10 @@ public class ItemDetail extends AppCompatActivity {
                 "Bohemian House",
                 (float) 20));
 
-        items.add(new Item("The Peninsula Chicago",
+        items.add(new Item(getString(R.string.hotel_peninsula_title),
                 R.drawable.hotel_the_peninsula,
-                "N Michigan Ave",
-                5,
+                getString(R.string.hotel_peninsula_location),
+                Integer.parseInt(getString(R.string.hotel_peninsula_review)),
                 new String[]{"Free Wifi", "Breakfast Available",
                         "Air Conditioning", "Pool",
                         "Non-Smoking Hotel"},
@@ -350,10 +346,10 @@ public class ItemDetail extends AppCompatActivity {
                 "The Peninsula Chicago",
                 (float) 525));
 
-        items.add(new Item("The Langham, Chicago",
+        items.add(new Item(getString(R.string.hotel_langham_title),
                 R.drawable.hotel_the_langham,
-                "Wabash Ave",
-                5,
+                getString(R.string.hotel_langham_location),
+                Integer.parseInt(getString(R.string.hotel_langham_review)),
                 new String[]{"Free Wifi", "Parking", "Breakfast Available",
                         "Air Conditioning", "Pool",
                         "Non-Smoking Hotel", "Restaurant"},
@@ -367,10 +363,10 @@ public class ItemDetail extends AppCompatActivity {
                 "The Langham, Chicago",
                 (float) 547));
 
-        items.add(new Item("Ace Hotel Chicago",
+        items.add(new Item(getString(R.string.hotel_ace_title),
                 R.drawable.hotel_ace_chicago,
-                "Morgan St",
-                4,
+                getString(R.string.hotel_ace_location),
+                Integer.parseInt(getString(R.string.hotel_ace_review)),
                 new String[]{"Free Wifi", "Breakfast Available",
                         "Air Conditioning", "Non-Smoking Hotel",
                         "Restaurant", "Room Service", "Suites"},
@@ -385,10 +381,10 @@ public class ItemDetail extends AppCompatActivity {
                 "Ace Hotel Chicago",
                 (float) 404));
 
-        items.add(new Item("The Guesthouse Hotel",
+        items.add(new Item(getString(R.string.hotel_guesthouse_title),
                 R.drawable.hotel_the_guesthouse,
-                "Clark St",
-                5,
+                getString(R.string.hotel_guesthouse_location),
+                Integer.parseInt(getString(R.string.hotel_guesthouse_review)),
                 new String[]{"Free Wifi", "Air Conditioning",
                         "Non-Smoking Hotel", "Room Service", "Suites",
                         "Fitness Center", "Kitchenette"},
@@ -402,10 +398,10 @@ public class ItemDetail extends AppCompatActivity {
                 "The Guesthouse Hotel",
                 (float) 499));
 
-        items.add(new Item("Hotel EMC2, Autograph Collection",
+        items.add(new Item(getString(R.string.hotel_emc2_title),
                 R.drawable.hotel_emc2,
-                "Ontario St",
-                4,
+                getString(R.string.hotel_emc2_location),
+                Integer.parseInt(getString(R.string.hotel_emc2_review)),
                 new String[]{"Wifi", "Parking", "Breakfast Buffet",
                         "Air Conditioning", "Non-Smoking Hotel",
                         "Restaurant", "Room Service"},
@@ -417,10 +413,10 @@ public class ItemDetail extends AppCompatActivity {
                 "Hotel EMC2, Autograph Collection",
                 (float) 390));
 
-        items.add(new Item("Kimpton Hotel Monaco Chicago",
+        items.add(new Item(getString(R.string.hotel_kimption_title),
                 R.drawable.hotel_kimpton,
-                "Wabash Ave",
-                3,
+                getString(R.string.hotel_kimption_location),
+                Integer.parseInt(getString(R.string.hotel_kimption_review)),
                 new String[]{"Free Internet", "Breakfast Available",
                         "Air Conditioning", "Non-Smoking Hotel",
                         "Restaurant", "Room Service", "Suites"},
@@ -436,10 +432,10 @@ public class ItemDetail extends AppCompatActivity {
                 "Kimpton Hotel Monaco Chicago",
                 (float) 320));
 
-        items.add(new Item("Wrigley Field",
+        items.add(new Item(getString(R.string.mustsee_wrigley_title),
                 R.drawable.mustsee_wrigley_field,
-                "Addison St",
-                5,
+                getString(R.string.mustsee_wrigley_location),
+                Integer.parseInt(getString(R.string.mustsee_wrigley_review)),
                 new String[]{"Seating bowl", "Press box",
                         "Budweiser Bleachers", "Visitors' clubhouse",
                         "Cubs' dugout", "Field"},
@@ -449,10 +445,10 @@ public class ItemDetail extends AppCompatActivity {
                 "Arenas & Stadiums",
                 (float) 24));
 
-        items.add(new Item("McDonald's #1 Store Museum",
+        items.add(new Item(getString(R.string.mustsee_mcdonald_title),
                 R.drawable.mustsee_mcdonald_no1_store,
-                "Des Plains",
-                4,
+                getString(R.string.mustsee_mcdonald_location),
+                Integer.parseInt(getString(R.string.mustsee_mcdonald_review)),
                 new String[]{"Specialty Museums", "Museums"},
                 "McDonald's #1 Store Museum is a recreation of the first McDonald's " +
                         "Restaurant opened in Des Plaines, Illinois by McDonald's Corporation " +
@@ -460,10 +456,10 @@ public class ItemDetail extends AppCompatActivity {
                 "McDonald's",
                 (float) 0));
 
-        items.add(new Item("University of Chicago",
+        items.add(new Item(getString(R.string.mustsee_uc_title),
                 R.drawable.mustsee_university_of_chicago,
-                "Ellis Ave",
-                5,
+                getString(R.string.mustsee_uc_location),
+                Integer.parseInt(getString(R.string.mustsee_uc_review)),
                 new String[]{"Educational sites", "Universities & Schools", "Sights & Landmarks"},
                 "Welcome to the University of Chicago! Founded in 1890 through a gift " +
                         "from John D. Rockefeller, the University of Chicago is an intellectual " +
@@ -472,10 +468,10 @@ public class ItemDetail extends AppCompatActivity {
                 "University of Chicago",
                 (float) 0));
 
-        items.add(new Item("Chicago Loop Walking Tour",
+        items.add(new Item(getString(R.string.mustsee_loop_title),
                 R.drawable.mustsee_the_loop,
-                "The Loop",
-                3,
+                getString(R.string.mustsee_loop_location),
+                Integer.parseInt(getString(R.string.mustsee_loop_review)),
                 new String[]{"Get to know the Loop, Chicago’s lively downtown area",
                         "Experience the beauty of this urban metropolis on foot",
                         "Local guide shares insider knowledge of the city"},
@@ -489,20 +485,20 @@ public class ItemDetail extends AppCompatActivity {
                 "Wild Onion Walks Chicago",
                 (float) 30));
 
-        items.add(new Item("United Center",
+        items.add(new Item(getString(R.string.mustsee_united_title),
                 R.drawable.mustsee_united_center,
-                "W Madison St",
-                4,
+                getString(R.string.mustsee_united_location),
+                Integer.parseInt(getString(R.string.mustsee_united_review)),
                 new String[]{"Arenas & Stadiums", "Sights & Landmarks"},
                 "This modern arena replaced the old Chicago Stadium as home " +
                         "court for the NBA's Bulls and the NHL's Blackhawks.",
                 "United Center",
                 (float) 15));
 
-        items.add(new Item("Robie House",
+        items.add(new Item(getString(R.string.mustsee_robie_title),
                 R.drawable.mustsee_robie_house,
-                "Woodlawn Ave",
-                4,
+                getString(R.string.mustsee_robie_location),
+                Integer.parseInt(getString(R.string.mustsee_robie_review)),
                 new String[]{"Architectural Buildings", "Historic Sites",
                         "Sights & Landmarks"},
                 "The Robie House on the University of Chicago campus is considered " +
