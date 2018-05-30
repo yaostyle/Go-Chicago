@@ -211,14 +211,8 @@ public class ItemDetail extends AppCompatActivity {
                 R.drawable.food_lou_malnati_pizza,
                 "State St",
                 5,
-                new String[] {"Fast Pass Admission to the Art Institute of Chicago, located " +
-                        "in Grant Park. Bypass General Admission lines and gain expedited " +
-                        "access to collection galleries and special exhibitions",
-                        "Browse an extraordinary collection of Impressionist and modern art",
-                        "Admire masterpieces by artists such as Monet, Renoir, Seurat, " +
-                                "van Gogh, Chagall and Pollock",
-                        "Complimentary tour available daily at noon; guests under 14 years " +
-                                "of age receive free admission!"},
+                new String[] {"Italian", "Pizza", "Vegetarian Friendly",
+                                "Vegan Options", "Gluten Free Options"},
                 "Lou Malnati’s opened the doors to its 33rd pizzeria on Monday, " +
                         "July 4, 2011. Located at 1120 N. State Street in the city’s " +
                         "Gold Coast neighborhood, this pizzeria is the company’s new " +
@@ -228,6 +222,195 @@ public class ItemDetail extends AppCompatActivity {
                         "for local Chicagoans, as well as a mandatory destination for tourists.",
                 "Lou Malnati's Pizzeria",
                 (float) 5));
+
+        items.add(new Item("Girl & The Goat",
+                R.drawable.food_girl_and_the_goat,
+                "Randolph St",
+                5,
+                new String[] {"American", "Vegetarian Friendly",
+                        "Gluten Free Options", "Vegan Options"},
+                "Girl & the Goat has been serving fun foods, craft beers, " +
+                        "and making wine in a rustic and kick-butt environment since " +
+                        "summer 2010. The restaurant opens at 4:30 every day, and stays " +
+                        "open until 11pm on weeknights and until midnight on Fridays " +
+                        "and Saturdays (until those last late night eaters scrape their " +
+                        "fork across the plate for the last time, or finish licking " +
+                        "their plates until they're shiny and clean). \n\nThe Goat's menu " +
+                        "is divided into three categories: Vegetable, Fish, and of " +
+                        "course Meat--while vegetable, fish, or meat are respectively " +
+                        "the main stars of their categories, there are crossovers in " +
+                        "each area so you'll get a little bit of everything.",
+                "Girl & The Goat",
+                (float) 15));
+
+        items.add(new Item("Portillo's",
+                R.drawable.food_portillos,
+                "Ontario St",
+                4,
+                new String[] {"American", "Fast Food", "Soups", "Vegetarian Friendly"},
+                "Home to America's favorite Chicago-style hot dogs, Italian " +
+                        "beef, burgers, salads, and chocolate cake. \n\nThe first " +
+                        "Portillo's hot dog stand known as \"The Dog House\" opens " +
+                        "in 1963 on North Avenue in Villa Park. Owner and founder " +
+                        "Dick Portillo invests $1,100 into a 6' x 12' trailer " +
+                        "without a bathroom or running water. To get the water " +
+                        "he needs, he runs 250 feet of garden hose from a nearby " +
+                        "building into the trailer.",
+                "Portillo's",
+                (float) 10));
+
+        items.add(new Item("Wildberry Pancakes and Cafe",
+                R.drawable.food_wildberry,
+                "Randolph St",
+                5,
+                new String[] {"American", "Cafe", "Vegetarian Friendly",
+                        "Vegan Options", "Gluten Free Options"},
+                            "Get your day off to a great start” at this " +
+                                    "“slightly upscale” " +
+                                    "breakfast- and lunch-only pancake chain, where an " +
+                                    "“amazingly big” American menu offers “more flair” " +
+                                    "than expected plus “huge”, “reasonably priced” " +
+                                    "portions; it's “mobbed” on weekends, so “be prepared " +
+                                    "to wait.",
+                "Wildberry ",
+                (float) 15));
+
+        items.add(new Item("Smoque BBQ",
+                R.drawable.food_smoqu_bbq,
+                "Randolph St",
+                5,
+                new String[] {"American", "Barbecue", "Gluten Free Options"},
+                "Smoque (smōk) BBQ is a neighborhood kind of place that cooks up " +
+                        "BBQ good enough to make it a true destination. It was created by " +
+                        "five regular guys who happen to be passionate about food in general " +
+                        "and BBQ in particular.",
+                "Smoque BBQ ",
+                (float) 20));
+
+        items.add(new Item("Bohemian House",
+                R.drawable.food_bohemian_house,
+                "Illinois St",
+                5,
+                new String[] {"German", "Polish", "European", "Czech",
+                        "Eastern European", "Central European",
+                        "Hungarian", "Austrian", "Vegetarian Friendly",
+                        "Gluten Free Options"},
+                "Located in Chicago's River North neighborhood at State and " +
+                        "Illinois (11 W. Illinois), Bohemian House captures the " +
+                        "lighthearted and carefree essence of Bohemian culture. " +
+                        "Exposed brick walls and wood timber, eclectic décor, warm " +
+                        "earth tones and soft lighting set the backdrop for a comfortable " +
+                        "and sociable dining experience. Guest can expect to enjoy an " +
+                        "original menu of approachable Bohemian-inspired fare with " +
+                        "influences from the Czech Repulic, Germany and Austria. \n\nAcquainting " +
+                        "Central Europe to the Central U.S., our culinary team takes a " +
+                        "fresh approach to traditional favorites, utilizing the best of " +
+                        "what's in season. ",
+                "Bohemian House",
+                (float) 20));
+
+        items.add(new Item("The Peninsula Chicago",
+                R.drawable.hotel_the_peninsula,
+                "N Michigan Ave",
+                5,
+                new String[] {"Free Wifi", "Breakfast Available",
+                        "Air Conditioning", "Pool",
+                        "Non-Smoking Hotel"},
+                        "Located at Water Tower Park on the \"Manificent Mile,\" the " +
+                        "city’s premier shopping district, The Peninsula Chicago is the " +
+                                "city's most luxurious and sophisticated hotel, offering " +
+                                "guests all possible amenities and services. The Peninsula " +
+                                "Chicago is a proud recipient of the Five-Star, Five-Diamond " +
+                                "Award, and was also recently awarded \"#1 Large City Hotel In " +
+                                "US And Canada\" by readers of Travel + Leisure.",
+                "The Peninsula Chicago",
+                (float) 525));
+
+        items.add(new Item("The Langham, Chicago",
+                R.drawable.hotel_the_langham,
+                "Wabash Ave",
+                5,
+                new String[] {"Free Wifi", "Parking", "Breakfast Available",
+                        "Air Conditioning", "Pool",
+                        "Non-Smoking Hotel", "Restaurant"},
+                "Legendary service and timeless British style in an iconic Chicago " +
+                        "landmark. The perfect blend of convenience and luxurious comfort " +
+                        "only at The Langham, Chicago. \n\nThe Langham, Chicago is " +
+                        "conveniently located within walking distance of the city's " +
+                        "business district, major attractions and Chicago’s retail hub, " +
+                        "Magnificent Mile, making the hotel an ideal base from which " +
+                        "to explore the city or conduct business.",
+                "The Langham, Chicago",
+                (float) 547));
+
+        items.add(new Item("Ace Hotel Chicago",
+                R.drawable.hotel_ace_chicago,
+                "Morgan St",
+                4,
+                new String[] {"Free Wifi", "Breakfast Available",
+                        "Air Conditioning", "Non-Smoking Hotel",
+                        "Restaurant", "Room Service", "Suites"},
+                "Ace Hotel Chicago lives in a stoic, industrial concrete " +
+                        "and glass building in the West Loop, once home to an " +
+                        "Italian-American cheesemaking company and, before that, " +
+                        "a pair of mysterious brothers. \n\nWe're walking distance to " +
+                        "the Morgan Lake L Station and some of the best food in " +
+                        "the city. You can throw a coin and hit Google (we don't " +
+                        "recommend it, they've got cameras) and what once was " +
+                        "Oprah Winfrey's HQ.",
+                "Ace Hotel Chicago",
+                (float) 404));
+
+        items.add(new Item("The Guesthouse Hotel",
+                R.drawable.hotel_the_guesthouse,
+                "Clark St",
+                5,
+                new String[] {"Free Wifi", "Air Conditioning",
+                        "Non-Smoking Hotel", "Room Service", "Suites",
+                        "Fitness Center", "Kitchenette"},
+                "The Guesthouse Hotel was originally built in 2008 as " +
+                        "boutique condominiums, but soon found its groove as a place " +
+                        "for 10 unique—and spacious—vacation rentals. \n\nIn 2013, " +
+                        "The Guesthouse broke ground on a new building next door, " +
+                        "adding 15 more deluxe units, and a lobby, club room, retail " +
+                        "space, business center, and gym, to fully develop into an " +
+                        "all-accommodating boutique hotel.",
+                "The Guesthouse Hotel",
+                (float) 499));
+
+        items.add(new Item("Hotel EMC2, Autograph Collection",
+                R.drawable.hotel_emc2,
+                "Ontario St",
+                4,
+                new String[] {"Wifi", "Parking", "Breakfast Buffet",
+                        "Air Conditioning","Non-Smoking Hotel",
+                        "Restaurant", "Room Service"},
+                "Immerse yourself in downtown Chicago's creative culture at " +
+                        "Hotel EMC2, Autograph Collection. Located in Streeterville, " +
+                        "our boutique hotel is within walking distance of the Theater " +
+                        "District, Navy Pier and a plethora of shops and eateries along " +
+                        "The Magnificent Mile. ",
+                "Hotel EMC2, Autograph Collection",
+                (float) 390));
+
+        items.add(new Item("Kimpton Hotel Monaco Chicago",
+                R.drawable.hotel_kimpton,
+                "Wabash Ave",
+                3,
+                new String[] {"Free Internet", "Breakfast Available",
+                        "Air Conditioning","Non-Smoking Hotel",
+                        "Restaurant", "Room Service", "Suites"},
+                "Smackdab in the center of downtown Chicago on the River, " +
+                        "Kimpton Hotel Monaco Chicago combines a desirable Loop location " +
+                        "with a fun design, warm hospitality, and Kimpton touches like " +
+                        "complimentary nightly wine hour. \n\nFrom your guestroom or suite, " +
+                        "take in the city lights and river views from your window seat " +
+                        "(tip: the perfect backdrop for photos), then head downstairs to " +
+                        "our new Belgian bistro-inspired mussel & beer bar, Fisk & Co, " +
+                        "featuring a mouthwatering menu of mussels, oysters, steak fries, " +
+                        "and burgers.",
+                "Kimpton Hotel Monaco Chicago",
+                (float) 320));
 
 
     }

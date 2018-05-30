@@ -35,6 +35,30 @@ public class FoodFragment extends Fragment {
                 R.drawable.food_lou_malnati_pizza,
                 "State St",
                 5));
+        items.add(new Item("Girl & The Goat",
+                R.drawable.food_girl_and_the_goat,
+                "Randolph St",
+                5));
+
+        items.add(new Item("Portillo's",
+                R.drawable.food_portillos,
+                "Ontario St",
+                4));
+
+        items.add(new Item("Wildberry Pancakes and Cafe",
+                R.drawable.food_wildberry,
+                "Randolph St",
+                5));
+
+        items.add(new Item("Smoque BBQ",
+                R.drawable.food_smoqu_bbq,
+                "Pulaski Rd",
+                5));
+
+        items.add(new Item("Bohemian House",
+                R.drawable.food_bohemian_house,
+                "Illinois St",
+                5));
 
         final ItemAdapter adapter = new ItemAdapter(getActivity(), items);
 
