@@ -1,7 +1,12 @@
 # Grow with Google Udacity Project 5 - Tour Guide  App (Go Chicago!)
 This is a tour guide app called Go Chicago! that shows you information
-about local restaurants, hotels, things-to-do and hotels.
+about city tour, restaurants, hotels, and must-sees.
 
 ## Content Source:
-T.B.D.
+- Background image source: Google Image Search
+- Icons: Material.io
+- Album Images: Google Image Search
+- Tour Reference: TripAdvisor.com 
+- Logo: Design by Chris Hsu
+
 
