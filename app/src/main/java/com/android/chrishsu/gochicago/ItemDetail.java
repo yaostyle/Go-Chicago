@@ -73,11 +73,11 @@ public class ItemDetail extends AppCompatActivity {
         itemHighlight.setText(highlights_text);
 
         //Get overview view and set its value
-        TextView itemOverview = (TextView) findViewById(R.id.item_overview);
+        TextView itemOverview = findViewById(R.id.item_overview);
         itemOverview.setText(mItems.get(index).getOverview());
 
         //Get price view and set its value
-        TextView itemPrice = (TextView) findViewById(R.id.item_price);
+        TextView itemPrice = findViewById(R.id.item_price);
         itemPrice.setText(getString(R.string.item_price_txt,
                 String.valueOf(mItems.get(index).getPrice())));
     }
