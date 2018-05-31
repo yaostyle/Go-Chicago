@@ -15,6 +15,13 @@ import java.util.ArrayList;
 //Create ItemAdapter
 public class ItemAdapter extends ArrayAdapter<Item> {
 
+    //Create a ViewHolder class to improve scrolling performance
+    static class ViewHolder {
+        TextView title;
+        TextView location;
+        ImageView image;
+    }
+
     //ItemAdapter constructor
     public ItemAdapter(Context context, ArrayList<Item> items) {
         super(context, 0, items);
@@ -36,17 +43,20 @@ public class ItemAdapter extends ArrayAdapter<Item> {
         //Get the current item by position index
         Item currentItem = getItem(position);
 
+        //Create a view holder
+        ViewHolder holder = new ViewHolder();
+
         //Get the title TextView and set its title value
-        TextView titleTextView = listItemView.findViewById(R.id.title);
-        titleTextView.setText(currentItem.getTitle());
+        holder.title = listItemView.findViewById(R.id.title);
+        holder.title.setText(currentItem.getTitle());
 
         //Get the location TextView and set its location value
-        TextView locationTextView = listItemView.findViewById(R.id.location);
-        locationTextView.setText(currentItem.getLocation());
+        holder.location = listItemView.findViewById(R.id.location);
+        holder.location.setText(currentItem.getLocation());
 
         //Get the image ImageView and set its image resource ID
-        ImageView imageView = listItemView.findViewById(R.id.image);
-        imageView.setImageResource(currentItem.getImageResourceId());
+        holder.image = listItemView.findViewById(R.id.image);
+        holder.image.setImageResource(currentItem.getImageResourceId());
 
         //Call function showReviewStar and pass number of ReviewStart
         showReviewStar(listItemView, currentItem.getReviewStar());
