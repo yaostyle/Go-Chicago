@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentTransaction;
 
 //Create CategoryAdapter and extends from FragmentPagerAdapter
 public class CategoryAdapter extends FragmentPagerAdapter {
@@ -15,6 +16,10 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     //Create CategoryAdapter constructor
     public CategoryAdapter(Context context, FragmentManager fm) {
         super(fm);
+        FragmentTransaction transaction = fm.beginTransaction();
+        transaction.addToBackStack(null);
+        transaction.commit();
+
         thisContext = context;
     }
 

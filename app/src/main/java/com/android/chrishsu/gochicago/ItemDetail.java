@@ -1,7 +1,11 @@
 package com.android.chrishsu.gochicago;
 
+import android.support.annotation.Nullable;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,6 +23,9 @@ public class ItemDetail extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item_detail);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
+
         //First, retrieve string value from Intent
         String itemTitle = getIntent().getStringExtra(getString(R.string.intent_extra_item_title));
 
@@ -34,6 +41,22 @@ public class ItemDetail extends AppCompatActivity {
         //Inflate layout
         inflateLayout(currentItemIndex);
 
+    }
+
+    //Override the onCreateOptionsMenu
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    //Change the behavior for Up-button to act as Back-button
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            onBackPressed();
+            return true;
+        }
+        return false;
     }
 
     //Function to inflate layout by position index
@@ -82,10 +105,6 @@ public class ItemDetail extends AppCompatActivity {
                 String.valueOf(mItems.get(index).getPrice())));
     }
 
-    @Override
-    public void onBackPressed() {
-        moveTaskToBack(true);
-    }
 
     private int getItemIndexByTitle(String title) {
         try {
